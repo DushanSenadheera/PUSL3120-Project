@@ -1,12 +1,38 @@
-require('dotenv').config()
-
+require('dotenv').config();
 const express = require('express');
 const app = express();
+const connectToDb = require('./config');
+const userRoute = require('./routes/userRoute');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+
+app.use(bodyParser);
+app.use(cors);
+app.use('/', userRoute);
+
+connectToDb();
 
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+  res.send('Hello World!');
 });
 
-app.listen(process.env.PORT, () =>{
-    console.log(`Server is listening on port ${process.env.PORT}!`);
+app.listen(process.env.PORT, () => {
+    console.log(`Server is running at port ${process.env.PORT}`);
 });
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+
