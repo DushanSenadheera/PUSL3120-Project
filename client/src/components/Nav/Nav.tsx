@@ -14,7 +14,7 @@ function Navbar() {
         <ul id="nav-links">
           <li><a href="/">Home</a></li>
           <li><a href="/#explore">Explore</a></li>
-          <li><a href="/#about">About</a></li>
+          <li><a href="/about">About</a></li>
           <li><a href="/#contact">Contact</a></li>
           {user != null ? (
             <li id="user-mobile"><a href="/profile"><i className="far fa-user"></i> {user}</a></li>
