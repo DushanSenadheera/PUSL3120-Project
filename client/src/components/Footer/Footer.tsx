@@ -1,12 +1,12 @@
 import React from 'react';
-import './Footer.css'; // Import your Footer stylesheet here
+import './Footer.css'; 
 
 function Footer() {
   return (
     <footer>
       <div className="footer-top">
         <div className="footer-logo">
-          <img src="assets/logo footer.png" alt="logo footer" />
+          <img src="../src/assets/logo footer.png" alt="logo footer" />
         </div>
         <div className="footer-nav">
           <h4>Navigation</h4>
@@ -14,7 +14,7 @@ function Footer() {
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Explore</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="/about">About</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </div>

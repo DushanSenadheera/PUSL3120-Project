@@ -1,46 +1,20 @@
 import React from 'react'
-import Nav from './components/Nav/Nav'
-import Footer from './components/Footer/Footer'
+import { BrowserRouter, Router, Switch, Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
+import About from './pages/About'
 
 function App() {
   return (
-    <div>
-      <Nav/>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <h1>Hello ABC Cinema</h1>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <Footer/>
-    </div>
+   <BrowserRouter>
+   <main>
+    <Routes>
+      <Route path="/" element={<Home/>} />
+      <Route path="/about" element={<About/>} />
+    </Routes>
+   </main>
+   </BrowserRouter>
+      
+    
   )
 }
 
