@@ -1,8 +1,9 @@
-// Import necessary React modules and CSS file
+// Importing Dependencies and CSS
 import React from 'react';
+import Nav from '../Nav/Nav';
 import './signin.css';
 
-// Create a functional component for Sign In
+// Functional component for Sign In
 const SignIn = () => {
   return (
     <>
@@ -15,7 +16,7 @@ const SignIn = () => {
 
       {/* Body */}
       <body>
-        {/* Include Navbar Component */}
+        {/* Navbar Component */}
         <Navbar />
 
         {/* Main Content */}
@@ -30,7 +31,7 @@ const SignIn = () => {
                 <br />
                 <input type="submit" value="Sign In" className="sign-in-btn" />
               </form>
-              <p>
+              <p className='register-text'>
                 Don't have an account?
                 <br />
                 <a href="register.jsp">Register</a> from here
@@ -39,7 +40,7 @@ const SignIn = () => {
           </div>
         </div>
 
-        {/* Include Footer Component */}
+        {/* Footer Component */}
         <Footer />
       </body>
     </>
@@ -48,17 +49,17 @@ const SignIn = () => {
 
 // Navbar Component
 const Navbar = () => {
-  // Implement your Navbar component JSX here
+
   return (
     <div>
-      {/* Navbar JSX */}
+      <Nav />
     </div>
   );
 };
 
 // Footer Component
 const Footer = () => {
-  // Implement your Footer component JSX here
+
   return (
     <div>
       {/* Footer JSX */}
