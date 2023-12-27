@@ -1,7 +1,7 @@
 import React from 'react'
 import Signin from '../components/Signin/Signin'
 
-function Temp() {
+function SignIn() {
   return (
     <div>
         <Signin />
@@ -9,4 +9,4 @@ function Temp() {
   )
 }
 
-export default Temp
+export default SignIn
