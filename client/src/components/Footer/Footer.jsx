@@ -1,4 +1,4 @@
-import React from 'react';
+import Nav from '../Nav/Nav.json';
 import './Footer.css'; 
 
 function Footer() {
@@ -12,10 +12,13 @@ function Footer() {
           <h4>Navigation</h4>
           <br />
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Explore</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="#">Contact</a></li>
+          {
+            Nav.map (items => (
+              <div key={items.key} >
+                <li ><a href={items.url}>{items.title}</a></li>
+              </div>
+            ))
+          }
           </ul>
         </div>
         <div className="footer-other-links">
