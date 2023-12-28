@@ -141,3 +141,6 @@ nav ul li a:hover{
         padding: 6px;
     }
 }
+.nav-flex{
+    display: flex;
+}
