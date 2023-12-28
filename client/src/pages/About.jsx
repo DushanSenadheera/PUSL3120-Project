@@ -1,11 +1,7 @@
-import React from 'react'
-import Nav from '../components/Nav/Nav'
-import Footer from '../components/Footer/Footer'
-
 export default function About() {
   return (
     <div>
-        <Nav />
+    
         <br />
         <br />
         <br />
@@ -31,7 +27,7 @@ export default function About() {
         <br />
         <br />
         <br />
-        <Footer/>
+   
 
     </div>
   )

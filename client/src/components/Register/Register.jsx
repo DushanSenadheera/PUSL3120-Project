@@ -1,7 +1,4 @@
 //Import Dependancies and CSS
-import React from 'react';
-import Nav from '../Nav/Nav';
-import Foot from '../Footer/Footer';
 import './register.css';
 
 const Register = () => {
@@ -15,7 +12,7 @@ const Register = () => {
 
       <body>
         {/* Navbar Component */}
-        <Navbar />
+       
 
         {/* Main Content */}
         <div className="bg">
@@ -47,31 +44,12 @@ const Register = () => {
           </div>
         </div>
 
-        {/* Footer */}
-        <Footer />
+
       </body>
     </>
   );
 };
 
-// Navbar Component
-const Navbar = () => {
 
-  return (
-    <div>
-      <Nav />
-    </div>
-  );
-};
-
-// Footer Component
-const Footer = () => {
-
-  return (
-    <div>
-      <Foot />
-    </div>
-  );
-};
 
 export default Register;

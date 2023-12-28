@@ -1,11 +1,7 @@
-import React from 'react'
-import Nav from '../components/Nav/Nav'
-import Footer from '../components/Footer/Footer'
 
 function Home() {
   return (
     <div>
-        <Nav />
         <br />
         <br />
         <br />
@@ -36,7 +32,6 @@ function Home() {
         <br />
         <br />
         <br />
-        <Footer/>
     </div>
   )
 }
