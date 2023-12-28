@@ -1,5 +1,5 @@
-import React from 'react';
 import './Nav.css'; 
+import Nav from './Nav.json';
 
 function Navbar() {
   const user = "John Doe"; 
@@ -11,11 +11,15 @@ function Navbar() {
           <a href="/"><img src="../src/assets/logo header.png" alt="header logo" className="logo" /></a>
           <img src="./assets/menu.png" alt="mobile menu" id="mobile-menu" />
         </div>
-        <ul id="nav-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/#explore">Explore</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/#contact">Contact</a></li>
+        <ul id="nav-links" className='nav-flex'>
+          {
+            Nav.map (items => (
+              <div key={items.key} >
+                <li ><a href={items.url}>{items.title}</a></li>
+              </div>
+            ))
+          }
+          
           {user != null ? (
             <li id="user-mobile"><a href="/profile"><i className="far fa-user"></i> {user}</a></li>
           ) : (
