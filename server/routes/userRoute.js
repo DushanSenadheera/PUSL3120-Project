@@ -1,19 +1,29 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../models/userSchema');
+const jwt = require('jsonwebtoken');
 
 router.post('/login', (req, res) => {
-  const userId = req.body.id;
-  const userPassword = req.body.password;
+  const email = req.body.email;
+  const password = req.body.password;
 
   User.findOne({
-    userName: userId,
-    password: userPassword
+    email: email,
+    password: password
   }).then((user) => {
     if (user) {
-      res.send('user login success');
+      const token = jwt.sign({
+        email: user.email,
+        fName: user.fName
+      }, process.env.JWT_KEY, {
+        expiresIn: "1h"
+      });
+      res.send({
+        token: token
+      });
     } else {
       res.send('user login failed');
+      req.status(401);
     }
   }).catch((err) => {
     console.log(err);
@@ -22,8 +32,11 @@ router.post('/login', (req, res) => {
 
 router.post('/sign', (req, res) => {
   const user = new User({
-    userName: req.body.id,
+    fName: req.body.fName,
+    lName: req.body.lName,
+    email: req.body.email,
     password: req.body.password,
+    mobile: req.body.phone,
   });
 
   user.save().then(() => {
@@ -36,7 +49,7 @@ router.post('/sign', (req, res) => {
 router.put('/update', (req, res) => {
   const userId = req.body.id;
   const password = req.body.password
- 
+
   //find user by id and update password
   User.findOneAndUpdate({
     userName: userId
