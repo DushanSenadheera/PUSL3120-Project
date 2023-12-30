@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Black Adamaaaaaaaa",
+        "subtitle": "The Rock",
+        "url": "../src/assets/black adam.jpg"
+    },
+    {
+        "title": "Batman",
+        "subtitle": "Ben Affleck",
+        "url": "../src/assets/Batman.jpg"
+    },
+    {
+        "title": "Avater",
+        "subtitle": "Sam Worthington",
+        "url": "../src/assets/avatar.jpg"
+    },
+    {
+        "title": "Babylon",
+        "subtitle": "Brad Pitt",
+        "url": "../src/assets/babylon.jpg"
+    },
+    {
+        "title": "Violent Night",
+        "subtitle": "Brad Pitt",
+        "url": "../src/assets/violent night.jpg"
+    }
+
+
+
+]
