@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #161616;
+  padding: 14px;
+}
+
+.display-none{
+    display: none;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+}
+
+.movie-details {
+  width: 25%;
+  height: 100vh;
+  border-right: 0.5px solid rgba(255, 255, 255, 0.096);
+}
+
+
+.total-price{
+  display: flex;
+}
+
+.seat-booking {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.owned{
+    background-color: red;
+}
+
+.movie {
+  padding: 14px;
+  text-align: center;
+  color: white;
+  padding-top: 20%;
+}
+
+.movie img {
+  height: auto;
+  width: 180px;
+}
+
+section {
+  text-align: left;
+}
+
+.cast{
+  font-size: 12px;
+}
+
+.catergories{
+  font-size: 12px;
+  display: flex;
+}
+
+.test{
+    display: flex;
+    flex-direction: column;
+}
+
+.catergories span{
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 2px;
+  margin: 2px;
+  width: fit-content;
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.options label {
+  color: white;
+
+}
+
+.payment {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.payhere-payment{
+    background-color: #D80000;
+    padding: 6px;
+    color: #ffffff;
+    border: none;
+}
+
+select {
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.507);
+  border: none;
+  
+}
+
+.formStyle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#total-titcket-priceDisplay{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.options input{
+  padding: 6px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.507);
+  color: #ffffff;
+}
+
+.payment-btn {
+  background-color: #D80000;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 2px solid #D80000;
+}
+
+/* tharuns css */
+
+.seat {
+  background-color: #d2d2d8;
+  height: 32px;
+  width: 32px;
+  margin: 3px;
+  border-radius: 5px;
+  font-size: small;
+  text-align: center;
+  cursor: pointer;
+}
+
+.seat-booking{
+    padding-top: 5%
+}
+
+.seat:hover {
+  transform: translateY(-4px);
+  transition: 0.2s;
+}
+
+.seat-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.seat:nth-of-type(5) {
+  margin-right: 18px;
+}
+
+.seat:nth-last-of-type(5) {
+  margin-left: 18px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.screen {
+  text-align: center;
+  align-items: center;
+  background-color: #fff;
+  height: 25px;
+  width: 100%;
+  margin-bottom: 22px;
+  box-shadow: 0 10px 50px rgba(255, 255, 255, 0.7);
+}
+
+.guide {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.guide section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 12px;
+}
+
+
+.guide p {
+  color: white;
+  padding: 4px;
+}
+
+.seat-sold {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: red;
+  color: red;
+}
+
+.seat-selected {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: greenyellow;
+}
+
+#seat-info{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+#total-titcket-price{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.seat-available{
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: #d2d2d8;
+}
+
+.seatbooked {
+  background-color: greenyellow;
+}
+
+
+#snackbar {
+  font-weight: 600;
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
+  text-align: center;
+  border-radius: 6px;
+  padding: 16px;
+  position: fixed;
+  z-index: 10000;
+  left: 50%;
+  bottom: 30px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+#snackbar i{
+  color: red;
+}
+
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.bookedSeats{
+    display: flex;
+}
+
+#trailer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
