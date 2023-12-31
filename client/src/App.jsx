@@ -11,7 +11,7 @@ import Admin_Layout from "./pages/Admin_Layout";
 import Admin_Premiere from "./pages/Admin_PremiereMovie";
 import Admin_Upcoming from "./pages/Admin_UpcomingMovie";
 import Admin_Logout from "./pages/Admin_Logout";
-import Seatbooking from './pages/Seatbooking/Seatbooking'
+import {Seatbooking} from './pages/Seatbooking/Seatbooking'
 
 function App() {
   return (
