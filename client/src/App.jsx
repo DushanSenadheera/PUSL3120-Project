@@ -5,14 +5,21 @@ import SignIn from './pages/SignIn'
 import Register from './pages/Register'
 import Nav from './components/Nav/Nav'
 import Footer from './components/Footer/Footer'
-import { Seatbooking } from './pages/Seatbooking/Seatbooking'
+import Admin_Booking from "./pages/Admin_Bookings";
+import Admin_Dashboard from "./pages/Admin_Dashboard";
+import Admin_Layout from "./pages/Admin_Layout";
+import Admin_Premiere from "./pages/Admin_PremiereMovie";
+import Admin_Upcoming from "./pages/Admin_UpcomingMovie";
+import Admin_Logout from "./pages/Admin_Logout";
+import Seatbooking from './pages/Seatbooking/Seatbooking'
 
 function App() {
   return (
    <div>
-    <Nav />
+    
     <BrowserRouter>
    <main>
+   <Nav />
     <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="/about" element={<About/>} />
@@ -20,10 +27,23 @@ function App() {
       <Route path="/register" element={<Register />} />
       <Route path="/seatbooking" element={<Seatbooking />} />
     </Routes>
+    
+    <Routes>
+    <Route path="/admin" element={<Admin_Layout />}>
+          <Route path="dashboard" element={<Admin_Dashboard />} />
+          <Route path="premiere" element={<Admin_Premiere />} />
+          <Route path="bookings" element={<Admin_Booking />} />
+          <Route path="upcoming" element={<Admin_Upcoming />} />
+          <Route path="logout" element={<Admin_Logout />} />
+        </Route>
+    </Routes>
+    
+ 
    </main>
    </BrowserRouter>
    <Footer />
    </div>
+   
   )
 }
 
