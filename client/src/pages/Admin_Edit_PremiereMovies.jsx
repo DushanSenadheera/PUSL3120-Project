@@ -1,39 +1,9 @@
+function Admin_Edit_Premiere() {
+  return (
+    <div>
+      <h1>Premiere Edit</h1>
+    </div>
+  );
+}
 
-function Home() {
-    return (
-      <div>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <h1>This is the Admin View to edit Movies that will be upcoming</h1>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-      </div>
-    )
-  }
-  
-  export default Home
+export default Admin_Edit_Premiere;
