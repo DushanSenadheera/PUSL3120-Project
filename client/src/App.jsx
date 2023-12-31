@@ -5,6 +5,7 @@ import SignIn from './pages/SignIn'
 import Register from './pages/Register'
 import Nav from './components/Nav/Nav'
 import Footer from './components/Footer/Footer'
+import { Seatbooking } from './pages/Seatbooking/Seatbooking'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/about" element={<About/>} />
       <Route path="/siginin" element={<SignIn />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/seatbooking" element={<Seatbooking />} />
     </Routes>
    </main>
    </BrowserRouter>
