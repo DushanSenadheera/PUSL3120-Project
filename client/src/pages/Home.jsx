@@ -1,11 +1,12 @@
 // import '..src/pages/Home.css';
-
-
 import AboutUs from '../components/Home/AboutUs'
 import ContactUs from '../components/Home/ContactUs'
 import Landing from '../components/Home/Landing'
 import Premirering from '../components/Home/Premirering '
-// import Slideshow from '../components/Home/Slideshow'
+// import Slideshow from '../components/Home/Slideshow'\
+
+
+
 
 
 function Home() {
@@ -23,7 +24,6 @@ function Home() {
        
         <Premirering />
         <br /><br />
-        <Premirering />
         <br />
         <br />
         <br />

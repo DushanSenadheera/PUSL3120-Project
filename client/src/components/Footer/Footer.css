@@ -51,6 +51,12 @@ footer h4{
     color: #D80000;
 }
 
+    .get-in-touch{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
 
 
 @media screen and (max-width: 600px){
