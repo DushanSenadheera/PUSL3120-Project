@@ -13,6 +13,7 @@ import Admin_Upcoming from "./pages/Admin_UpcomingMovie";
 import Admin_Logout from "./pages/Admin_Logout";
 import Payment from "./pages/Payment";
 import { Seatbooking } from "./pages/Seatbooking/Seatbooking";
+import Description from './pages/Description'
 
 function App() {
   return (
@@ -27,9 +28,10 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/seatbooking" element={<Seatbooking />} />
             <Route path="/payment" element={<Payment />} />
+            <Route path="/description" element={<Description/>} />
           </Routes> 
 
-          {/* <Routes>
+          <Routes>
             <Route path="/" element={<Admin_Layout />}>
               <Route index element={<Admin_Dashboard />} />
               <Route path="premiere" element={<Admin_Premiere />} />
@@ -37,7 +39,7 @@ function App() {
               <Route path="upcoming" element={<Admin_Upcoming />} />
               <Route path="logout" element={<Admin_Logout />} />
             </Route>
-          </Routes> */}
+          </Routes>
         </main>
       </BrowserRouter>
       <Footer />
