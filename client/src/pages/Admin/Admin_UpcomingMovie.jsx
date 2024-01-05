@@ -1,7 +1,7 @@
 import "./Admin_UpcomingMovie.css";
 import { Outlet, Link, NavLink } from "react-router-dom";
-import { Upcoming_Menu_List } from "../helpers/Admin-Upcoming-Movie-List";
-import MenuItem from "../components/Admin-Movie-Items/Admin-Premiere-Item";
+import { Upcoming_Menu_List } from "../../helpers/Admin-Upcoming-Movie-List";
+import MenuItem from "../../components/Admin-Movie-Items/Admin-Premiere-Item";
 import { PiPlusCircleFill } from "react-icons/pi";
 
 function Admin_Upcoming() {
