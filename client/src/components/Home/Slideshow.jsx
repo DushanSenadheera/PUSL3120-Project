@@ -1,29 +1,28 @@
-import { useState } from 'react';
+import './Slideshow.css'; 
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
+import SlideshowData from './Slideshow.json';
 
 const Slideshow = () => {
+    // const images = [
+    //   "../src/assets/theater-banner.png",
+    //   "../src/assets/Paper-vs-Digital-Movie-Posters-Featured.jpg",
+    //   "../src/assets/noovie-natiional-cinemedia.webp"
+    // ];
 
-
-  return (
-    <main>
-        <div className="slideshow-container">
-      <div className={`mySlides1 ${currentSlide === 0 ? 'active' : ''}`}>
-        <img src="../src/assets/theater-banner.png" style={{ width: '100%' }} alt="Theater Banner" />
-      </div>
-
-      <div className={`mySlides1 ${currentSlide === 1 ? 'active' : ''}`}>
-        <img src="../src/assets/Paper-vs-Digital-Movie-Posters-Featured.jpg" style={{ width: '100%' }} alt="Digital Movie Posters" />
-      </div>
-
-      <div className={`mySlides1 ${currentSlide === 2 ? 'active' : ''}`}>
-        <img src="../src/assets/noovie-natiional-cinemedia.webp" style={{ width: '100%' }} alt="Noovie National Cinemedia" />
-      </div>
-
-      <a className="prev" onClick={() => plusSlides(-1)}>&#10094;</a>
-      <a className="next" onClick={() => plusSlides(1)}>&#10095;</a>
-    </div>
-    </main>
-  );
+    return (
+        <Slide >
+            {
+              SlideshowData.map((slide) => (
+                <div className="each-slide-effect" key={slide.key}>
+                    <div style={{'backgroundImage': `url(${slide.image})`}}>
+                        {/* <span>{slide.key}</span> */}
+                    </div>
+                </div>
+              ))
+            }
+        </Slide>
+    );
 };
-<script src="./bannerSlider.js"></script>
 
 export default Slideshow;
