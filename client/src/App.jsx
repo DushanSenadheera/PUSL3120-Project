@@ -11,6 +11,7 @@ import Admin_Layout from "./pages/Admin_Layout";
 import Admin_Premiere from "./pages/Admin_PremiereMovie";
 import Admin_Upcoming from "./pages/Admin_UpcomingMovie";
 import Admin_Logout from "./pages/Admin_Logout";
+import Payment from './pages/Payment'
 import {Seatbooking} from './pages/Seatbooking/Seatbooking'
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <Route path="/siginin" element={<SignIn />} />
       <Route path="/register" element={<Register />} />
       <Route path="/seatbooking" element={<Seatbooking />} />
+      <Route path="/payment" element={<Payment/>} />
     </Routes>
     
     <Routes>
