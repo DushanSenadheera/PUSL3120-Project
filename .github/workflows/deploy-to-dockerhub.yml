@@ -22,15 +22,13 @@ jobs:
             - name: Build and push Docker image
               uses: docker/build-push-action@v2
               with:
-                context: ./server
-                file: ./server/Dockerfile
+                context: ../server
                 push: true
                 tags: dcsenadheera/cinema:server-latest     
                 
             - name: Build and push Docker image
               uses: docker/build-push-action@v2
               with:
-                context: ./client
-                file: ./client/Dockerfile
+                context: ../client
                 push: true
                 tags: dcsenadheera/cinema:client-latest  
