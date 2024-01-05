@@ -1,3 +1,6 @@
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
+import { FaLocationArrow } from "react-icons/fa";
 
 const ContactUs = () => {
   return (
@@ -7,15 +10,15 @@ const ContactUs = () => {
         <div className="contact-info">
           <ul>
             <li>
-              <i className="fas fa-phone-alt"></i>
+              <i><FaPhoneAlt /></i>
               <span>011 412 1234, 076 212 1234</span>
             </li>
             <li>
-              <i className="fas fa-envelope"></i>
+              <i><IoIosMail /></i>
               <span>abccinema@mail.com</span>
             </li>
             <li>
-              <i className="fas fa-map-marker-alt"></i>
+              <i><FaLocationArrow /></i>
               <span>No. 12/3, street Road, City</span>
             </li>
           </ul>

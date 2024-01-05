@@ -1,6 +1,11 @@
 import Nav from '../Nav/Nav.json';
 import './Footer.css'; 
 
+// Import react icons
+import { FaSquareFacebook } from "react-icons/fa6";
+import { IoLogoInstagram } from "react-icons/io5";
+import { FaYoutube } from "react-icons/fa";
+
 function Footer() {
   return (
     <footer>
@@ -34,10 +39,10 @@ function Footer() {
         <div className="footer-contact">
           <h4>Get In Touch</h4>
           <br />
-          <ul>
-            <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i className="fab fa-youtube"></i></a></li>
-            <li><a href="#"><i className="fab fa-tiktok"></i></a></li>
+          <ul className='get-in-touch'>
+            <li><a href="#"><i><FaSquareFacebook /></i></a></li>
+            <li><a href="#"><i><IoLogoInstagram /></i></a></li>
+            <li><a href="#"><i><FaYoutube /></i></a></li>
           </ul>
         </div>
       </div>
