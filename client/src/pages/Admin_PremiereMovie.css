@@ -1,0 +1,64 @@
+.Premiere-Menu-List {
+    width: 75vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.menuItem {
+    width: 200px;
+    height: 400px;
+    margin: 5px;
+    overflow: hidden;
+}
+
+.background-Image {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menuItem h3 {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.Premiere-Movie-Edit-Section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Edit-Delete-Right a {
+    margin-left: 10px;
+
+}
+
+.Bottom-Right-Add-Button {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 2rem;
+    color: rgb(255, 0, 0);
+    filter: drop-shadow(1px 2px 0.5px rgba(0, 0, 0, 0.7));
+
+}
+
+.Bottom-Right-Add-Button :hover {
+    transform: scale(1.02);
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .Premiere-Menu-List {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .Premiere-Menu-List {
+        grid-template-columns: 1fr;
+    }
+}
