@@ -1,8 +1,10 @@
-.Page-Layout{
+.Page-Layout {
     display: flex;
     flex-direction: column;
 }
-.Header-Section{
+
+.Header-Section {
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,6 +13,7 @@
     padding: 1rem 4rem;
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
 
 .admin-name {
@@ -32,15 +35,17 @@
 .Admin-img {
     width: 50px;
     padding: 10px;
+    cursor: pointer;
 }
 
-.Page_Body{
-    margin-top: 5rem;
+.Page_Body {
+    margin-top: 4rem;
     display: flex;
     flex-direction: row;
 }
 
-.Left-Side-Navbar{
+.Left-Side-Navbar {
+    left: 0;
     height: 100vh;
     width: 300px;
     background: #161616;
@@ -48,12 +53,11 @@
     position: fixed;
 }
 
-.Left-Side-Navbar ul{
-    margin-top: 1rem;
+.Left-Side-Navbar ul {
+    margin-top: 2rem;
 }
 
-
-.Left-Side-Navbar ul li a{
+.Left-Side-Navbar ul li a {
     display: block;
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -65,22 +69,13 @@
     font-size: 20px;
 }
 
-.Left-Side-Navbar li a.active {
-    color: rgb(255, 255, 255);
-    background-color: #ff0000;
-    margin-left: auto;
-    margin-right: auto;
+.Righ-Side-Content {
+    width: fit-content;
     padding: 20px;
-    border-radius: 8px;
-    width: 250px;
-}
-
-.Righ-Side-Content{
+    align-items: center;
     margin-left: 300px;
-    padding: 20px;
 }
 
-
-
-
-
+.admin-nav-acive {
+    border-radius: 8px;
+}
