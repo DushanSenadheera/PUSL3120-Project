@@ -23,7 +23,6 @@ jobs:
               uses: docker/build-push-action@v2
               with:
                 context: ./server
-                file : ../Dockerfile
                 push: true
                 tags: dcsenadheera/cinema:server-latest     
                 
@@ -31,6 +30,5 @@ jobs:
               uses: docker/build-push-action@v2
               with:
                 context: ./client
-                file: ../Dockerfile
                 push: true
                 tags: dcsenadheera/cinema:client-latest  
