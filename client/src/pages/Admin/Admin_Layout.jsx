@@ -1,7 +1,8 @@
 import "./Admin_Layout.css";
 import { Outlet, Link, NavLink } from "react-router-dom";
-import logo from "../assets/logo-header.png";
-import Admin_img from "../assets/admin-pic.png";
+// import logo from "../src/assets/logo header.png";
+import logo from "/src/assets/logo header.png";
+import Admin_img from "/src/assets/admin-pic.png";
 
 function Admin_Layout() {
   return (
@@ -11,7 +12,7 @@ function Admin_Layout() {
         <div className="Admin-img-n-name">
           <img src={Admin_img} alt="Admin" className="Admin-img" />
           <div className="admin-name">
-            <span>Amith Gamagedara</span>
+            <span>Amitha Gamagedara</span>
           </div>
         </div>
       </div>

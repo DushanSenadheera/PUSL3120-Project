@@ -5,12 +5,12 @@ import SignIn from "./pages/SignIn";
 import Register from "./pages/Register";
 import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
-import Admin_Booking from "./pages/Admin_Bookings";
-import Admin_Dashboard from "./pages/Admin_Dashboard";
-import Admin_Layout from "./pages/Admin_Layout";
-import Admin_Premiere from "./pages/Admin_PremiereMovie";
-import Admin_Upcoming from "./pages/Admin_UpcomingMovie";
-import Admin_Logout from "./pages/Admin_Logout";
+import Admin_Booking from "./pages/Admin/Admin_Bookings";
+import Admin_Dashboard from "./pages/Admin/Admin_Dashboard";
+import Admin_Layout from "./pages/Admin/Admin_Layout";
+import Admin_Premiere from "./pages/Admin/Admin_PremiereMovie";
+import Admin_Upcoming from "./pages/Admin/Admin_UpcomingMovie";
+import Admin_Logout from "./pages/Admin/Admin_Logout";
 import Payment from "./pages/Payment";
 import { Seatbooking } from "./pages/Seatbooking/Seatbooking";
 import Description from './pages/Description'
