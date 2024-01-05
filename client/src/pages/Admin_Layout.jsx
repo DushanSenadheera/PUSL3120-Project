@@ -1,6 +1,6 @@
 import "./Admin_Layout.css";
 import { Outlet, Link, NavLink } from "react-router-dom";
-import logo from "../assets/logo header.png";
+import logo from "../assets/logo-header.png";
 import Admin_img from "../assets/admin-pic.png";
 
 function Admin_Layout() {
