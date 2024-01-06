@@ -32,6 +32,7 @@ function App() {
 
           {/* <Routes>
             <Route path="/" element={<Admin_Layout />}>
+    
               <Route index element={<Admin_Dashboard />} />
               <Route path="/premiere" element={<Admin_Premiere />} />
               <Route path="/upcoming" element={<Admin_Upcoming />} />
