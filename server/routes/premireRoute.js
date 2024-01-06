@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Premire = require('../models/premireSchema');
+const multer = require('multer');
 
 router.get('/premire', (req, res) => {
     Premire.find({}).then((data) => {
@@ -10,23 +11,44 @@ router.get('/premire', (req, res) => {
     });
 });
 
-router.post('/premire/add', (req, res) => {
+const storage = multer.diskStorage({
+    destination: function(req, file, cb) {
+      cb(null, './uploads/');
+    },
+    filename: function(req, file, cb) {
+      cb(null, file.originalname);
+    }
+  });
+  
+const upload = multer({ storage: storage });
+const cpUpload = upload.fields([{ name: 'poster', maxCount: 1 }, { name: 'background', maxCount: 1 }])
+
+router.post('/premire/add', cpUpload, (req, res) => {
+
+    const poster = req.files['poster'][0];
+    const pos = poster.originalname;
+    
+    const background = req.files['background'][0];
+    const back = background.originalname;
+    
     const premire = new Premire({
         movie: req.body.movie,
         directorName: req.body.directorName,
         catergory: req.body.catergory,
         cast: req.body.cast,
         description: req.body.description,
-        poster: req.body.poster,
-        background: req.body.background,
+        poster: pos,
+        background: back,
         link: req.body.link,
         price: req.body.price,
     });
 
     premire.save().then(() => {
         console.log('premire added');
+        res.send('premire added');
     }).catch((err) => {
         console.log(err);
+        res.send(err);
     });
 } );
 
