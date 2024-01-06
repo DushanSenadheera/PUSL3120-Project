@@ -19,7 +19,7 @@ function App() {
     <div>
       <BrowserRouter>
         <main>
-          {/* <Nav />
+          <Nav />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -27,7 +27,7 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/seatbooking" element={<Seatbooking />} />
             <Route path="/payment" element={<Payment />} />
-          </Routes>  */}
+          </Routes> 
 
           <Routes>
             <Route path="/" element={<Admin_Layout />}>
@@ -40,7 +40,7 @@ function App() {
           </Routes>
         </main>
       </BrowserRouter>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
