@@ -22,6 +22,7 @@ function Premirering () {
     <main>
         <div className="premiering" id="explore">
           <h3>Premiering Now</h3>
+          <a href="/description">
           <div className="premiering-movies" >
             {premire.map((data) => (
               <form action="" key={data.id} >
@@ -33,10 +34,10 @@ function Premirering () {
                   <br className="temp"/>
                   {/* <input type="submit" value="See More..." className="hidden-btn" /> */}
                 </div>
-        
               </form>
             ))}
           </div>
+          </a>
         </div>
     </main>
     

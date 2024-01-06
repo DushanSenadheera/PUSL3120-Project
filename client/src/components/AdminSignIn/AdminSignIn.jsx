@@ -1,7 +1,7 @@
 import './signin.css';
 import axios from 'axios';
 
-const SignIn = () => {
+const AdminSignIn = () => {
 
   const handleUserLogin = (e) => {
       
@@ -9,7 +9,7 @@ const SignIn = () => {
       const formData = new FormData(e.target);
       const data = Object.fromEntries(formData);
           
-      axios.post('http://localhost:8000/login', data)
+      axios.post('http://localhost:8000/admin', data)
         .then(res => {
           if (res.status === 200) {
             localStorage.setItem('user', res.data.email);
@@ -36,11 +36,6 @@ const SignIn = () => {
               <br />
               <input type="submit" value="Sign In" className="sign-in-btn" />
             </form>
-            <p className='register-text'>
-              Don&apos;t have an account?
-              <br />
-              <a href="/register">Register</a> from here
-            </p>
           </div>
         </div>
       </div>
@@ -48,4 +43,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default AdminSignIn;

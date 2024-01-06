@@ -49,7 +49,7 @@ const Register = () => {
             <p className='login-text'>
               Already have an account?
               <br />
-              <a href="signIn.jsp">Sign In</a> from here
+              <a href="/signin">Sign In</a> from here
             </p>
           </div>
         </div>

@@ -14,6 +14,7 @@ import Admin_Logout from "./pages/Admin/Admin_Logout";
 import Payment from "./pages/Payment";
 import { Seatbooking } from "./pages/Seatbooking/Seatbooking";
 import Description from './pages/Description'
+import Profile from './pages/Profile/Profile'
 
 function App() {
   return (
@@ -24,16 +25,18 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/siginin" element={<SignIn />} />
+            <Route path="/signin" element={<SignIn />} />
             <Route path="/register" element={<Register />} />
             <Route path="/seatbooking" element={<Seatbooking />} />
             <Route path="/payment" element={<Payment />} />
             <Route path="/description" element={<Description/>} />
+            <Route path="/profile" element={<Profile/>} />
+
           </Routes> 
 
           <Routes>
             <Route path="/" element={<Admin_Layout />}>
-              <Route index element={<Admin_Dashboard />} />
+              <Route path="dashboard" element={<Admin_Dashboard />} />
               <Route path="premiere" element={<Admin_Premiere />} />
               <Route path="bookings" element={<Admin_Booking />} />
               <Route path="upcoming" element={<Admin_Upcoming />} />

@@ -207,7 +207,7 @@ main h4,p{
     justify-content: space-around;
     align-items: center;
     /* flex-wrap: wrap; */
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 
 .movie img{
@@ -216,7 +216,7 @@ main h4,p{
 }
 
 .premiering{
-    margin: 0 5%;
+    margin: 0%;
 }
 
 .cooming-soon{
