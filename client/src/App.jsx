@@ -13,8 +13,10 @@ import Admin_Upcoming from "./pages/Admin/Admin_UpcomingMovie";
 import Admin_Logout from "./pages/Admin/Admin_Logout";
 import Payment from "./pages/Payment";
 import { Seatbooking } from "./pages/Seatbooking/Seatbooking";
-import Description from './pages/Description'
-import Profile from './pages/Profile/Profile'
+import Description from './pages/Description';
+import Profile from './pages/Profile/Profile';
+import Profile_Edit from './pages/Profile/Profile-Edit';
+
 
 function App() {
   return (
@@ -31,6 +33,7 @@ function App() {
             <Route path="/payment" element={<Payment />} />
             <Route path="/description" element={<Description/>} />
             <Route path="/profile" element={<Profile/>} />
+            <Route path="/profile-edit" element={<Profile_Edit/>} />
 
           </Routes> 
 
