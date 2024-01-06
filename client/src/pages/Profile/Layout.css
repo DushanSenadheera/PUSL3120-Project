@@ -105,6 +105,21 @@ form input{
     margin: auto;
 }
 
+.booking-table{
+    width: 80%;
+    height: 25vh;
+    margin-right: 50px;
+    text-align: left;
+    box-shadow: 2px 2px 12px rgba(255, 255, 255, 0.2), -1px -1px 8px rgba(255, 255, 255, 0);
+    color: black;
+}
+
+.booking-table td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-size: small;
+}
 
 
 
