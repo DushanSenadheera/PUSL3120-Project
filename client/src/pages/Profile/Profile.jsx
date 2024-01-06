@@ -17,12 +17,12 @@ function Profile() {
               <input type="tel" name="mobile" value="0713112927" placeholder="Mobile" disabled />
             </form>
             <div className='btns'>
-              <a href="">
+              <a href="/bookinghistory">
                 <input type="submit" value="Seat Booking History" className="sign-in-btn" />
               </a>
               <br />
-              <a href="">
-                <input type="submit" value="Profile Settings" className="del-acc-btn" />
+              <a href="/profile-edit">
+                <input type="submit" value="Edit Profile" className="del-acc-btn" />
               </a>
             </div>
           </div>
