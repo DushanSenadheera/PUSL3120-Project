@@ -1,0 +1,112 @@
+/* .Admin_Booking_Page {
+  width: 75vw;
+  height: auto;
+}
+
+.booking-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.booking-table-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.booking-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-table th,
+.booking-table td {
+  padding: 12px;
+  text-align: center;
+  width: 150px;
+}
+
+.booking-table thead {
+  background-color: #161616;
+  color: white;
+}
+
+.booking-table tbody {
+  background-color: #f9f9f9;
+}
+
+.booking-table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.booking-table tr:last-child {
+  border-bottom: none;
+}
+
+.booking-table td {
+  padding: 12px;
+}
+
+.booking-table .even-row {
+  background-color: #f8f8f8;
+}
+
+.booking-table .odd-row {
+  background-color: #eeeeee;
+}
+
+.booking-table .success {
+  color: #008000;
+}
+
+.booking-table .pending {
+  color: #000000;
+}
+
+.booking-table .cancel {
+  color: #ff0000;
+}
+
+.booking-form {
+  max-width: 400px;
+  margin: 20px;
+  align-self: flex-start;
+  margin-top: 60px;
+}
+
+.booking-form form {
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.booking-form button {
+  background: #D80000;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} */
