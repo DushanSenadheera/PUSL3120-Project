@@ -4,6 +4,7 @@ function Admin_Dashboard() {
       <h1>dashboard ekata monawada danneeee.....</h1><br />
       <h1>Ashanta ara anith okkotama Hii..</h1><br /><br />
       <h1>Dushan + Chem</h1>
+      <h1>kello nemei, meka iwarawela trip ekak yamu</h1>
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import './Home.css'; 
 import Premiering from "./Premiering.json"
 
 function Premirering () {

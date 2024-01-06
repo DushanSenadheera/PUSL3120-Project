@@ -1,9 +1,10 @@
-import './Nav.css'; 
+import './Nav.css';
 import Nav from './Nav.json';
 import { FaUser } from "react-icons/fa";
 
 function Navbar() {
-  const user = "John Doe"; 
+
+  const user = localStorage.getItem('user');
 
   return (
     <header>
@@ -14,13 +15,13 @@ function Navbar() {
         </div>
         <ul id="nav-links" className='nav-flex'>
           {
-            Nav.map (items => (
+            Nav.map(items => (
               <div key={items.key} >
                 <li ><a href={items.url}>{items.title}</a></li>
               </div>
             ))
           }
-          
+
           {user != null ? (
             <li id="user-mobile"><a href="/profile"><i><FaUser /></i> {user}</a></li>
           ) : (

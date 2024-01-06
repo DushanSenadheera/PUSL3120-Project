@@ -1,7 +1,7 @@
 import "./Admin_PremiereMovie.css";
 import { Outlet, Link, NavLink } from "react-router-dom";
-import { Premiere_Menu_List } from "../helpers/Admin-Premiere-Movie-List";
-import MenuItem from "../components/Admin-Movie-Items/Admin-Premiere-Item";
+import { Premiere_Menu_List } from "../../helpers/Admin-Premiere-Movie-List";
+import MenuItem from "../../components/Admin-Movie-Items/Admin-Premiere-Item";
 import { PiPlusCircleFill } from "react-icons/pi";
 
 function Admin_Premiere_Movie() {

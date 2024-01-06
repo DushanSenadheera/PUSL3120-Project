@@ -11,9 +11,10 @@ const upcomingRoute = require('./routes/upcomingRoute');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-app.use(bodyParser.json());
+app.use(cors({origin: '*',}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(cors(origin = '*'));
+
 app.use('/', userRoute);
 app.use('/', adminRoute);
 app.use('/', premireRoute);

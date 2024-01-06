@@ -20,6 +20,7 @@ router.post('/login', (req, res) => {
           });
           res.send({
             token: token,
+            email: email,
           });
         } else {
           res.status(401).send('Invalid Password');
@@ -35,9 +36,10 @@ router.post('/sign', (req, res) => {
 
   const password = req.body.password;
   const saltRounds = 10;
-
+  
   bcrypt.hash(password, saltRounds).then(function (hash) {
-    hashedPassword = hash;
+    
+    const hashedPassword = hash;
 
     const user = new User({
       fName: req.body.fName,
@@ -49,6 +51,7 @@ router.post('/sign', (req, res) => {
 
     user.save().then(() => {
       console.log('user account created');
+      res.sendStatus(200);
     }).catch((err) => {
       console.log(err);
     });
