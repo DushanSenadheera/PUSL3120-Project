@@ -1,7 +1,11 @@
 require('dotenv').config();
 
 const express = require('express');
+const http = require('http');
+const socketIo = require('socket.io');
 const app = express();
+const server = http.createServer(app);
+const io = socketIo(server);
 const connectToDb = require('./config');
 const userRoute = require('./routes/userRoute');
 const adminRoute = require('./routes/adminRoute');
@@ -14,6 +18,7 @@ const cors = require('cors');
 app.use(cors({origin: '*',}));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
+app.use('/uploads', express.static('uploads'));
 
 app.use('/', userRoute);
 app.use('/', adminRoute);
@@ -23,7 +28,25 @@ app.use('/', upcomingRoute);
 
 connectToDb();
 
-app.listen(process.env.PORT, () => {
+let bookedSeats = [];
+
+io.on('connection', (socket) => {
+    socket.on('check-seat', (seat, callback) => {
+        callback(bookedSeats.includes(seat));
+    });
+
+    socket.on('seat-booked', (seat) => {
+        bookedSeats.push(seat);
+        socket.broadcast.emit('seat-booked', seat);
+    });
+
+    socket.on('seat-unbooked', (seat) => {
+        bookedSeats = bookedSeats.filter(s => s !== seat);
+        socket.broadcast.emit('seat-unbooked', seat);
+    });
+});
+
+server.listen(process.env.PORT, () => {
     console.log(`Server is running at port ${process.env.PORT}`);
 });
 

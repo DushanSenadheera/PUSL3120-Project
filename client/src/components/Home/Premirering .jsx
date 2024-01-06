@@ -28,7 +28,7 @@ function Premirering () {
               <form action="" key={data.id} >
                 <div className="movie">
                 
-                  <img src={`../../server/uploads/${data.poster}`} alt="movie-poster" />
+                  <img src={`http://localhost:8000/uploads/${data.poster}`} alt="movie-poster" />
                   <h4>{data.movie}</h4>
                   <h5>{data.directorName}</h5>
                   <br className="temp"/>
