@@ -45,17 +45,6 @@ function Admin_Layout() {
             </li>
             <li>
               <NavLink
-                to="/bookings"
-                style={({ isActive }) => {
-                  return { background: isActive ? "#D80000" : "" };
-                }}
-                className="admin-nav-acive"
-              >
-                Bookings
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
                 to="/upcoming"
                 style={({ isActive }) => {
                   return { background: isActive ? "#D80000" : "" };
