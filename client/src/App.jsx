@@ -16,6 +16,7 @@ import { Seatbooking } from "./pages/Seatbooking/Seatbooking";
 import Description from './pages/Description';
 import Profile from './pages/Profile/Profile';
 import Profile_Edit from './pages/Profile/Profile-Edit';
+import ChangePassword from './pages/Profile/ChangePassword';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
             <Route path="/description" element={<Description/>} />
             <Route path="/profile" element={<Profile/>} />
             <Route path="/profile-edit" element={<Profile_Edit/>} />
+            <Route path="/changepassword" element={<ChangePassword/>} />
 
           </Routes> 
 
