@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Booking_Data from "../../helpers/Admin_Booking_Data";
-
 
 const BookingTable = () => {
   const [bookedTickets, setBookedTickets] = useState(Booking_Data);

@@ -1,10 +1,13 @@
+import "./Admin_Dashboard.css";
+import Admin_Movie_Table from "../../components/Admin-Dashboard/Admin_Booking_Table";
+import Admin_Booking_Data from "../../helpers/Admin_Booking_Data";
+
 function Admin_Dashboard() {
   return (
-    <div>
-      <h1>dashboard ekata monawada danneeee.....</h1><br />
-      <h1>Ashanta ara anith okkotama Hii..</h1><br /><br />
-      <h1>Dushan + Chem</h1>
-      <h1>kello nemei, meka iwarawela trip ekak yamu</h1>
+    <div className="Admin_Booking_Page">
+      <h3>Booking History</h3>
+      <br />
+      <Admin_Movie_Table data={Admin_Booking_Data} />
     </div>
   );
 }
