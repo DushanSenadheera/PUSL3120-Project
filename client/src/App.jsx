@@ -19,7 +19,7 @@ function App() {
     <div>
       <BrowserRouter>
         <main>
-          <Nav />
+          {/* <Nav />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -27,9 +27,9 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/seatbooking" element={<Seatbooking />} />
             <Route path="/payment" element={<Payment />} />
-          </Routes> 
+          </Routes>  */}
 
-          {/* <Routes>
+          <Routes>
             <Route path="/" element={<Admin_Layout />}>
               <Route index element={<Admin_Dashboard />} />
               <Route path="premiere" element={<Admin_Premiere />} />
@@ -37,10 +37,10 @@ function App() {
               <Route path="upcoming" element={<Admin_Upcoming />} />
               <Route path="logout" element={<Admin_Logout />} />
             </Route>
-          </Routes> */}
+          </Routes>
         </main>
       </BrowserRouter>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

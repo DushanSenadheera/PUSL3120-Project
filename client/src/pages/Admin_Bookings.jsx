@@ -1,9 +1,13 @@
-function Admin_Booking() {
+import "./Admin_Bookings.css";
+import React from "react";
+import BookingTable from "../components/Admin-Bookings/Admin_Booking_Table";
+
+const BookingPage = () => {
   return (
-    <div>
-      <h1>bookings</h1>
+    <div className="Admin_Booking_Page">
+      <BookingTable />
     </div>
   );
-}
+};
 
-export default Admin_Booking;
+export default BookingPage;
