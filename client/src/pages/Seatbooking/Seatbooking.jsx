@@ -1,29 +1,51 @@
 import './Seatbooking.css'
 import { row1, row2, row3, row4, row5 } from './seat'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import io from 'socket.io-client';
+
+const socket = io('http://localhost:8000', { transports: ['websocket'] });
 
 export const Seatbooking = () => {
 
-    
-
     const [selectedSeats, setSelectedSeats] = useState([]);
-  const [totalPrice, setTotalPrice] = useState(0);
-  const pri = 1200;
-  
-  const handleSeatClick = (seat, pri) => {
+    const [totalPrice, setTotalPrice] = useState(0);
+    const pri = 1200;
+
+    useEffect(() => {
+        socket.on('seat-booked', (seat) => {
+            setSelectedSeats((currentSeats) => [...currentSeats, seat]);
+        });
     
+        socket.on('seat-unbooked', (seat) => {
+            setSelectedSeats((currentSeats) => currentSeats.filter(s => s !== seat));
+        });
+    
+        return () => {
+            socket.off('seat-booked');
+            socket.off('seat-unbooked');
+        };
+    }, []);
 
-    if (selectedSeats.includes(seat)) {
-      setSelectedSeats(selectedSeats.filter(s => s !== seat));
-      setTotalPrice(totalPrice - pri);
+    const handleSeatClick = (seat, pri) => {
+        if (selectedSeats.includes(seat)) {
+            setSelectedSeats(selectedSeats.filter(s => s !== seat));
+            setTotalPrice(totalPrice - pri);
+            socket.emit('seat-unbooked', seat); // Emit 'seat-unbooked' event with seat as data
+        } else {
+            // Check if the seat has already been booked by another client
+            socket.emit('check-seat', seat, (isBooked) => {
+                if (!isBooked) {
+                    setSelectedSeats([...selectedSeats, seat]);
+                    setTotalPrice(totalPrice + pri);
+                    socket.emit('seat-booked', seat); // Emit 'seat-booked' event with seat as data
+                } else {
+                    alert('This seat has already been booked by another client.');
+                }
+            });
+        }
+    };
 
-    } else {
-      setSelectedSeats([...selectedSeats, seat]);
-      setTotalPrice(totalPrice + pri);
-    }
-  };
 
-  
 
     return (
         <div className="content">
@@ -39,7 +61,7 @@ export const Seatbooking = () => {
                             <span>Adventure</span>
                             <span>Sci-Fi</span>
                         </p>
-                        
+
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus asperiores repellendus, eius unde non vero corrupti dolore ut! Porro, itaque?</p>
                     </section>
                 </div>
@@ -52,9 +74,9 @@ export const Seatbooking = () => {
                             {
                                 row1.map((seat) => {
                                     return (
-                                        <div key={seat.id} 
-                                        className={`seat ${selectedSeats.includes(seat) ? 'seatbooked' : ''}`} 
-                                        onClick={() => handleSeatClick(seat, pri)}>{seat.seatNumber} </div>
+                                        <div key={seat.id}
+                                            className={`seat ${selectedSeats.includes(seat) ? 'seatbooked' : ''}`}
+                                            onClick={() => handleSeatClick(seat, pri)}>{seat.seatNumber} </div>
                                     )
                                 })
                             }
@@ -63,9 +85,9 @@ export const Seatbooking = () => {
                             {
                                 row2.map((seat) => {
                                     return (
-                                        <div key={seat.id} 
-                                        className={`seat ${selectedSeats.includes(seat) ? 'seatbooked' : ''}`} 
-                                        onClick={() => handleSeatClick(seat, pri)}>{seat.seatNumber}</div>
+                                        <div key={seat.id}
+                                            className={`seat ${selectedSeats.includes(seat) ? 'seatbooked' : ''}`}
+                                            onClick={() => handleSeatClick(seat, pri)}>{seat.seatNumber}</div>
                                     )
                                 })
                             }
@@ -74,9 +96,9 @@ export const Seatbooking = () => {
                             {
                                 row3.map((seat) => {
                                     return (
-                                        <div key={seat.id} 
-                                        className={`seat ${selectedSeats.includes(seat) ? 'seatbooked' : ''}`} 
-                                        onClick={() => handleSeatClick(seat, pri)}>{seat.seatNumber}</div>
+                                        <div key={seat.id}
+                                            className={`seat ${selectedSeats.includes(seat) ? 'seatbooked' : ''}`}
+                                            onClick={() => handleSeatClick(seat, pri)}>{seat.seatNumber}</div>
                                     )
                                 })
                             }
@@ -85,9 +107,9 @@ export const Seatbooking = () => {
                             {
                                 row4.map((seat) => {
                                     return (
-                                        <div key={seat.id} 
-                                        className={`seat ${selectedSeats.includes(seat) ? 'seatbooked' : ''}`} 
-                                        onClick={() => handleSeatClick(seat, pri)}>{seat.seatNumber}</div>
+                                        <div key={seat.id}
+                                            className={`seat ${selectedSeats.includes(seat) ? 'seatbooked' : ''}`}
+                                            onClick={() => handleSeatClick(seat, pri)}>{seat.seatNumber}</div>
                                     )
                                 })
                             }
@@ -96,9 +118,9 @@ export const Seatbooking = () => {
                             {
                                 row5.map((seat) => {
                                     return (
-                                        <div key={seat.id} 
-                                        className={`seat ${selectedSeats.includes(seat) ? 'seatbooked' : ''}`} 
-                                        onClick={() => handleSeatClick(seat, pri)}>{seat.seatNumber}</div>
+                                        <div key={seat.id}
+                                            className={`seat ${selectedSeats.includes(seat) ? 'seatbooked' : ''}`}
+                                            onClick={() => handleSeatClick(seat, pri)}>{seat.seatNumber}</div>
                                     )
                                 })
                             }
@@ -119,15 +141,15 @@ export const Seatbooking = () => {
                         </div>
                     </div>
                 </div>
-                
+
                 <div className="payment">
                     <div>
                         <h4>Selected Seats</h4>
-                    <span className="bookedSeats">{selectedSeats.map((seat, index) => (
-                    <p key={index}>{seat.seatNumber},</p>
-                ))}</span>
-                <br />
-                        <input type="text" name="total" value={"Total Price = "+totalPrice} id="total-titcket-priceDisplay" disabled />
+                        <span className="bookedSeats">{selectedSeats.map((seat, index) => (
+                            <p key={index}>{seat.seatNumber},</p>
+                        ))}</span>
+                        <br />
+                        <input type="text" name="total" value={"Total Price = " + totalPrice} id="total-titcket-priceDisplay" disabled />
                     </div>
                     <form method="post" action="authorize_payment" className="formStyle">
                         <input type="hidden" name="product" value="<%= movieName %>" />
