@@ -16,6 +16,7 @@ import Description from './pages/Description';
 import Profile from './pages/Profile/Profile';
 import Profile_Edit from './pages/Profile/Profile-Edit';
 import ChangePassword from './pages/Profile/ChangePassword';
+import BookingHistory from './pages/Profile/BookingHistory';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             <Route path="/profile" element={<Profile/>} />
             <Route path="/profile-edit" element={<Profile_Edit/>} />
             <Route path="/changepassword" element={<ChangePassword/>} />
+            <Route path="/bookinghistory" element={<BookingHistory/>} />
           </Routes> 
 
           <Routes>
