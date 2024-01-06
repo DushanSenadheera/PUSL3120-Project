@@ -1,0 +1,36 @@
+.admin-movie-table {
+    width: 75vw;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-movie-table thead th {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+}
+
+.admin-movie-table tbody td {
+    text-align: center;
+}
+
+.admin-movie-table tbody tr {
+    transition: background-color 0.3s;
+}
+
+.admin-movie-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.admin-movie-table tbody td {
+    padding: 12px;
+}
+
+.admin-movie-table tbody tr:nth-child(even) {
+    background-color: #c4c4c4;
+}
+
+.admin-movie-table tbody tr:nth-child(odd) {
+    background-color: #bababa;
+}
