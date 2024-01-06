@@ -32,7 +32,7 @@ function MovieDescription() {
               <iframe width="420" height="315" id="trailer" src=""></iframe>
             </div> */}
               <div className="cta">
-                <button className="btn-buy">Buy Ticket</button>
+                <a href="/seatbooking"><button className="btn-buy">Buy Ticket</button></a>
                 <button className="btn-trailer">Watch Trailer</button>
               </div>
             </div>
