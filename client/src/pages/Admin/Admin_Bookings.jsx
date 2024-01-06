@@ -1,5 +1,4 @@
 import "./Admin_Bookings.css";
-import React from "react";
 import BookingTable from "../../components/Admin-Bookings/Admin_Booking_Table";
 
 const BookingPage = () => {
