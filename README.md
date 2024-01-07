@@ -14,7 +14,7 @@ fully functioning movie ticket booking web application with admin dashboard crea
 - run your client using `npm run dev` command
 
 ## How to Run the Application Using Docker
-- Pull the Docker image from Docker Hub: `docker pull dcsenadheera/cinema-booking-app`.
-- Run the Docker image: `docker run -p 8000:8000 dcsenadheera/cinema-booking-app`.
+- Pull the Docker image from Docker Hub: `docker pull dcsenadheera/cinema`.
+- Run the Docker image: `docker run -p 8000:8000 dcsenadheera/cinema`.
   
 The application should now be running at `http://localhost:8000`.
