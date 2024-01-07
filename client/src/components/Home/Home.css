@@ -357,15 +357,19 @@ textarea{
     }
     
     contact-form-inputs section{
-        width: 100%;
+        width: auto;
     }
     
     contact-form-inputs section input{
-        width: 100%;
+        width: auto;
     }
     
     .contact-form-inputs input{
-        width: 90%;
+        width: auto;
+    }
+
+    .input-name{
+        width: 18vb;
     }
     
     .movie{
@@ -382,6 +386,11 @@ textarea{
     
     .about-img{
         padding: 12px;
+    }
+
+    .premiering-movies{
+        display: wrap;
+        flex-wrap: wrap;
     }
 
 }

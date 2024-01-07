@@ -342,6 +342,9 @@ background-color: white;
   height: 40px;
 }
 
+.paypal{
+  width: 50%;
+}
 
 @-webkit-keyframes fadein {
   from {
