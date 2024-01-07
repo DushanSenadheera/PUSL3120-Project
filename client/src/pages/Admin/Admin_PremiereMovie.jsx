@@ -7,7 +7,7 @@ import { PiPlusCircleFill } from "react-icons/pi";
 function Admin_Premiere_Movie() {
   return (
     <>
-      <Link className="Bottom-Right-Add-Button">
+      <Link to="/add_premiere_movie" className="Bottom-Right-Add-Button">
         <PiPlusCircleFill size={60} />
       </Link>
       <div className="Bottom-Right-Add-Button-Background"></div>

@@ -1,8 +1,8 @@
-import "./Premiere_Movie_Add.css";
+import "./Upcoming_Movie_Add.css";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Premiere_Movie_Add = () => {
+const Upcoming_Movie_Add = () => {
   const navigate = useNavigate();
 
   const [movieName, setMovieName] = useState("");
@@ -70,7 +70,7 @@ const Premiere_Movie_Add = () => {
 
   return (
     <div className="Add_Movie_Form">
-      <h3>Add Premiere Movie</h3>
+      <h3>Add Upcoming Movie</h3>
       <form onSubmit={handleSubmit}>
         <div className="Form_lables_n_inputs_style">
           <label htmlFor="movieName">Movie Name:</label>
@@ -189,4 +189,4 @@ const Premiere_Movie_Add = () => {
   );
 };
 
-export default Premiere_Movie_Add;
+export default Upcoming_Movie_Add;
