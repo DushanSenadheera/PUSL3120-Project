@@ -1,0 +1,30 @@
+[
+    {
+        "title": "JW 4",
+        "subtitle": "Keanu Reeves",
+        "url": "../src/assets/jw.jpg"
+    },
+    {
+        "title": "Transformers",
+        "subtitle": "Shia LaBeouf",
+        "url": "../src/assets/transformers.jpg"
+    },
+    {
+        "title": "Smile",
+        "subtitle": "Brad Pitt",
+        "url": "../src/assets/smile.jpg"
+    },
+    {
+        "title": "Top Gun Maverick",
+        "subtitle": "Tom Cruise",
+        "url": "../src/assets/tg.jpg"
+    },
+    {
+        "title": "Thor",
+        "subtitle": "Chris Hemsworth",
+        "url": "../src/assets/thor.jpg"
+    }
+
+
+
+]

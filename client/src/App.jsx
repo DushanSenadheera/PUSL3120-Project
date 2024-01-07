@@ -15,13 +15,18 @@ import { Seatbooking } from "./pages/Seatbooking/Seatbooking";
 import Description from './pages/Description'
 import Premiere_Movie_Add from "./components/Admin-Premiere-Movie-Add/Premiere_Movie_Add";
 import Upcoming_Movie_Add from "./components/Admin-Upcoming-Movie-Add/Upcoming_Movie_Add";
+import Profile from './pages/Profile/Profile';
+import Profile_Edit from './pages/Profile/Profile-Edit';
+import ChangePassword from './pages/Profile/ChangePassword';
+import BookingHistory from './pages/Profile/BookingHistory';
+
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <main>
-          {/* <Nav />
+          <Nav />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -30,11 +35,14 @@ function App() {
             <Route path="/seatbooking" element={<Seatbooking />} />
             <Route path="/payment" element={<Payment />} />
             <Route path="/description" element={<Description/>} />
-          </Routes>  */}
+            <Route path="/profile" element={<Profile/>} />
+            <Route path="/profile-edit" element={<Profile_Edit/>} />
+            <Route path="/changepassword" element={<ChangePassword/>} />
+            <Route path="/bookinghistory" element={<BookingHistory/>} />
+          </Routes> 
 
           <Routes>
             <Route path="/" element={<Admin_Layout />}>
-    
               <Route index element={<Admin_Dashboard />} />
               <Route path="/premiere" element={<Admin_Premiere />} />
               <Route path="/upcoming" element={<Admin_Upcoming />} />
@@ -45,7 +53,7 @@ function App() {
           </Routes>
         </main>
       </BrowserRouter>
-      {/* <Footer /> */}
+      <Footer /> 
     </div>
   );
 }

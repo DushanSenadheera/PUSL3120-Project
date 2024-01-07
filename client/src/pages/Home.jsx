@@ -4,6 +4,7 @@ import ContactUs from '../components/Home/ContactUs'
 import Landing from '../components/Home/Landing'
 import Premirering from '../components/Home/Premirering '
 import Slideshow from '../components/Home/Slideshow'
+import ComingSoon from '../components/Home/ComingSoon'
 
 
 
@@ -23,7 +24,7 @@ function Home() {
         } */}
        
         <Premirering />
-        <br /><br />
+        <ComingSoon />
         <br />
         <br />
         <Slideshow />
