@@ -13,6 +13,7 @@ function Navbar() {
           <a href="/"><img src="../src/assets/logo header.png" alt="header logo" className="logo" /></a>
           <img src="../src/assets/menu.png" alt="mobile menu" id="mobile-menu" />
         </div>
+        <div className='hide'>
         <ul id="nav-links" className='nav-flex'>
           {
             Nav.map(items => (
@@ -28,6 +29,7 @@ function Navbar() {
             <li><a href="/signIn"><button className="sign-up-btn" id="sign-up-btn-nav">Sign In</button></a></li>
           )}
         </ul>
+        </div>
         {user != null ? (
           <span id="user-web"><a href="/profile"><i className="far fa-user"></i> {user}</a></span>
         ) : (
