@@ -12,6 +12,8 @@ import Admin_Upcoming from "./pages/Admin/Admin_UpcomingMovie";
 import Admin_Logout from "./pages/Admin/Admin_Logout";
 import Payment from "./pages/Payment";
 import { Seatbooking } from "./pages/Seatbooking/Seatbooking";
+import Description from './pages/Description'
+import AdminSignIn from "./components/AdminSignIn/AdminSignIn";
 import Description from './pages/Description';
 import Profile from './pages/Profile/Profile';
 import Profile_Edit from './pages/Profile/Profile-Edit';
@@ -70,6 +72,14 @@ function App() {
 
           <Routes>
             <Route path="/" element={<Admin_Layout />}>
+
+              <Route path="dashboard" element={<Admin_Dashboard />} />
+              <Route path="premiere" element={<Admin_Premiere />} />
+              <Route path="bookings" element={<Admin_Booking />} />
+              <Route path="upcoming" element={<Admin_Upcoming />} />
+              <Route path="logout" element={<Admin_Logout />} />
+              <Route path="adminlogin" element = {<AdminSignIn/>} />
+
               <Route path="/admin" element={<Admin_Dashboard />} />
               <Route path="/premiere" element={<Admin_Premiere />} />
               <Route path="/upcoming" element={<Admin_Upcoming />} />
