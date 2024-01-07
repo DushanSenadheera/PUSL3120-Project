@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './Home.css'; 
 import axios from 'axios';
+import PremireringData from "/src/components/Home/Premiering.json"
 
 function Premirering () {
 
@@ -23,13 +24,13 @@ function Premirering () {
           <h3>Premiering Now</h3>
           <a href="/description">
           <div className="premiering-movies" >
-            {premire.map((data) => (
+            {PremireringData.map((data) => (
               <form action="" key={data.id} >
                 <div className="movie">
                 
-                  <img src={`http://localhost:8000/uploads/${data.poster}`} alt="movie-poster" />
-                  <h4>{data.movie}</h4>
-                  <h5>{data.directorName}</h5>
+                  <img src={data.url} alt="movie-poster" />
+                  <h4>{data.title}</h4>
+                  <h5>{data.subtitle}</h5>
                   <br className="temp"/>
                   {/* <input type="submit" value="See More..." className="hidden-btn" /> */}
                 </div>
