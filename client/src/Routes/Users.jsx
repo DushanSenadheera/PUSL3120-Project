@@ -10,13 +10,14 @@ import Profile from '../pages/Profile/Profile';
 import Profile_Edit from '../pages/Profile/Profile-Edit';
 import ChangePassword from '../pages/Profile/ChangePassword';
 import BookingHistory from '../pages/Profile/BookingHistory';
+import AdminSignIn from "../pages/Admin/AdminLogin";
 
 
 function Users() {
   return (
     <BrowserRouter>
     <Routes>
-            <Route path="/" element={<Home />} />
+            <Route index element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/signin" element={<SignIn />} />
             <Route path="/register" element={<Register />} />
@@ -27,6 +28,7 @@ function Users() {
             <Route path="/profile-edit" element={<Profile_Edit/>} />
             <Route path="/changepassword" element={<ChangePassword/>} />
             <Route path="/bookinghistory" element={<BookingHistory/>} />
+            <Route path="/adminlogin" element = {<AdminSignIn/>} />
           </Routes> 
     </BrowserRouter>
   )
