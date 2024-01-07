@@ -70,11 +70,15 @@ section {
 .catergories{
   font-size: 12px;
   display: flex;
+  flex-direction: row;
+  align-items: start;
 }
+
 
 .test{
     display: flex;
     flex-direction: column;
+    
 }
 
 .catergories span{
@@ -108,6 +112,7 @@ section {
     padding: 6px;
     color: #ffffff;
     border: none;
+    width: 60%;
 }
 
 select {
@@ -144,7 +149,6 @@ select {
   border: 2px solid #D80000;
 }
 
-/* tharuns css */
 
 .seat {
   background-color: #d2d2d8;
@@ -313,6 +317,34 @@ select {
   -ms-transform: translate(-50%,-50%);
 }
 
+.option{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
+.date-option{
+  display: flex;
+  width: 100%;
+  color: red;
+  margin-bottom: 22px;
+  height: 40px;
+}
+
+.time-option{
+  display: flex;
+  width: 100%;
+  color: red;
+background-color: white;
+  margin-bottom: 22px;
+  height: 40px;
+}
+
+.paypal{
+  width: 50%;
+}
 
 @-webkit-keyframes fadein {
   from {

@@ -4,6 +4,7 @@ import { Outlet, Link, NavLink } from "react-router-dom";
 import logo from "/src/assets/logo header.png";
 import Admin_img from "/src/assets/admin-pic.png";
 
+
 function Admin_Layout() {
   return (
     <div className="Page-Layout">
@@ -22,7 +23,7 @@ function Admin_Layout() {
           <ul>
             <li>
               <NavLink
-                to="/"
+                to="/admin"
                 style={({ isActive }) => {
                   return { background: isActive ? "#D80000" : "" };
                 }}
@@ -40,17 +41,6 @@ function Admin_Layout() {
                 className="admin-nav-acive"
               >
                 Premiere
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/bookings"
-                style={({ isActive }) => {
-                  return { background: isActive ? "#D80000" : "" };
-                }}
-                className="admin-nav-acive"
-              >
-                Bookings
               </NavLink>
             </li>
             <li>

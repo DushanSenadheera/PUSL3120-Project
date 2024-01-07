@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #161616;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+} 
+
+
+.nav-right{
+    display: flex;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+}
+
+nav ul li .logo{
+    float: left;
+}
+
+.nav{
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+nav ul{
+    display: flex;
+    
+}
+
+nav ul li{
+    float: right;
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+    float: left;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+nav ul li h5{
+    color: white;
+    font-size: 15px;
+    float: right;
+    margin-top: 28px;
+    margin-right: 50px;
+    margin-left: 20px;
+    height: auto;
+}
+
+
+.container-main{
+    display: flex;
+}
+
+.side-menu{
+    display: block;
+    float: left;
+    height: 100vh;
+    width: 350px;
+    background-color: #161616;
+    margin-top: 80px;
+    position: fixed;
+}
+
+menu{
+    text-align: center;
+    margin-top: 20px;
+}
+
+menu ul{
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+menu li{
+    margin: 20px;
+    font-size: 20px;
+}
+
+menu li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgb(30, 30, 30);
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 250px;
+    margin-top: 40px;
+}
+
+.side-menu li a.active {
+    color: rgb(255, 255, 255);
+    background-color: #ff0000;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(78, 78, 78);
+    color: white;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 250px;
+}
+
+.booking{
+    background-color: transparent;
+    width: 100%;
+    height: 100vh;
+    margin-top: 140px;
+    margin-left: 420px;
+    margin-right: 50px;
+}
+
+.booking-details table{
+   width: 1035px;
+   height: 100vh;
+   margin-right: 50px;
+   text-align: left;
+   box-shadow: 2px 2px 12px rgba(255, 255, 255, 0.2), -1px -1px 8px rgba(255, 255, 255, 0);
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th{
+    font-size: 16px;
+}
+
+td{
+    font-size: 15px;
+}
+
+table .booked{
+    color: rgb(0, 235, 0);
+    font-weight: 800;
+}
+
+table .failed{
+    color: red;
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+  
+

@@ -207,7 +207,7 @@ main h4,p{
     justify-content: space-around;
     align-items: center;
     /* flex-wrap: wrap; */
-    /* margin-top: 0px; */
+    /* margin-top: 40px; */
 }
 
 .movie img{
@@ -216,7 +216,7 @@ main h4,p{
 }
 
 .premiering{
-    margin: 0 5%;
+    margin: 0%;
 }
 
 .cooming-soon{
@@ -357,15 +357,19 @@ textarea{
     }
     
     contact-form-inputs section{
-        width: 100%;
+        width: auto;
     }
     
     contact-form-inputs section input{
-        width: 100%;
+        width: auto;
     }
     
     .contact-form-inputs input{
-        width: 90%;
+        width: auto;
+    }
+
+    .input-name{
+        width: 18vb;
     }
     
     .movie{
@@ -382,6 +386,11 @@ textarea{
     
     .about-img{
         padding: 12px;
+    }
+
+    .premiering-movies{
+        display: wrap;
+        flex-wrap: wrap;
     }
 
 }
