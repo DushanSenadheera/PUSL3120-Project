@@ -11,7 +11,7 @@ function Footer() {
     <footer>
       <div className="footer-top">
         <div className="footer-logo">
-          <img src="../src/assets/logo footer.png" alt="logo footer" />
+          <h1>Galaxy Cinema</h1>
         </div>
         <div className="footer-nav">
           <h4>Navigation</h4>

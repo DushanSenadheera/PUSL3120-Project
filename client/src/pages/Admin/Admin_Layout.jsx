@@ -9,7 +9,7 @@ function Admin_Layout() {
   return (
     <div className="Page-Layout">
       <div className="Header-Section">
-        <img src={logo} alt="Logo" className="logo" />
+        <h1>Galaxy Cinema</h1>
         <div className="Admin-img-n-name">
           <img src={Admin_img} alt="Admin" className="Admin-img" />
           <div className="admin-name">

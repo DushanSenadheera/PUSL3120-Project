@@ -10,7 +10,7 @@ function Navbar() {
     <header>
       <nav>
         <div className="mobile-nav-header">
-          <a href="/"><img src="../src/assets/logo header.png" alt="header logo" className="logo" /></a>
+          <h1>Galaxy Cinema</h1>
           <img src="../src/assets/menu.png" alt="mobile menu" id="mobile-menu" />
         </div>
         <div className='hide'>

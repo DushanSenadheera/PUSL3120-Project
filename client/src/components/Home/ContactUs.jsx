@@ -15,7 +15,7 @@ const ContactUs = () => {
             </li>
             <li>
               <i><IoIosMail /></i>
-              <span>abccinema@mail.com</span>
+              <span>galaxycinema@mail.com</span>
             </li>
             <li>
               <i><FaLocationArrow /></i>

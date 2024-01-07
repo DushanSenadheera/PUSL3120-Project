@@ -38,9 +38,8 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 12px;
+    padding: 26px;
     position: static;
-    
 }
 
 nav ul li{
