@@ -14,6 +14,7 @@ import Admin_Logout from "./pages/Admin/Admin_Logout";
 import Payment from "./pages/Payment";
 import { Seatbooking } from "./pages/Seatbooking/Seatbooking";
 import Description from './pages/Description'
+import AdminSignIn from "./components/AdminSignIn/AdminSignIn";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
               <Route path="bookings" element={<Admin_Booking />} />
               <Route path="upcoming" element={<Admin_Upcoming />} />
               <Route path="logout" element={<Admin_Logout />} />
+              <Route path="adminlogin" element = {<AdminSignIn/>} />
             </Route>
           </Routes>
         </main>
