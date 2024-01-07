@@ -58,6 +58,7 @@
     padding: 8px 12px;
     border-radius: 4px;
     font-weight: 600;
+    width: 100px;
 }
 
 .sign-in-form p a{
