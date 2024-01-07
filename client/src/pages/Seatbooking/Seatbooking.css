@@ -124,7 +124,7 @@ select {
 
 .formStyle{
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
 }
 
@@ -344,6 +344,7 @@ background-color: white;
 
 .paypal{
   width: 50%;
+
 }
 
 @-webkit-keyframes fadein {

@@ -315,6 +315,7 @@ textarea{
     border: 2px solid #D80000;
     cursor: pointer;
     font-weight: 600;
+    width: 100%;
 }
 
 
