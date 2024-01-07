@@ -5,7 +5,7 @@ import Admin from "./Routes/Admin";
 
 function App() {
   const shouldHideNavAndFooter = () => {
-    const hiddenRoutes = ['/admin', '/premiere', '/upcoming', 'logout', '/adminlogin']; // Add more routes if needed
+    const hiddenRoutes = ['/admin', '/premiere', '/upcoming', 'logout', '/adminlogin', '/add_premiere_movie', '/add_upcoming_movie', '/edit_premiere']; // Add more routes if needed
     return hiddenRoutes.includes(window.location.pathname);
   };
 
