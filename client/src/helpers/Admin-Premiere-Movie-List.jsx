@@ -1,33 +1,33 @@
-import Avatar from "../assets/Avatar.jpg";
-import Batman from "../assets/Batman.jpg";
-import Black_Adam from "../assets/black-adam.jpg";
-import Jurasic_World from "../assets/Jurasic-world.jpg";
-import Smile from "../assets/smile.jpg";
-import Violent_Night from "../assets/violent-night.jpg";
+import Wonka from "../assets/movies/premiering/wonka.jpg"
+import KathuruMithuru from "../assets/movies/premiering/kathuru-mithuru.jpg"
+import Leo from "../assets/movies/premiering/leo.jpg"
+import Pathaan from "../assets/movies/premiering/pathaan.jpg"
+import Oppenheimer from "../assets/movies/premiering/Oppenheimer.jpg"
+
 
 export const Premiere_Menu_List = [
   {
-    title: "Avatar 2",
-    image: Avatar,
+    title: "Wonka",
+    image: Wonka,
   },
   {
-    title: "Batman",
-    image: Batman,
+    title: "Kathuru Mithuru",
+    image: KathuruMithuru,
   },
   {
-    title: "Black Adam",
-    image: Black_Adam,
+    title: "Leo",
+    image: Leo,
   },
   {
-    title: "Jurasic World",
-    image: Jurasic_World,
+    title: "Pathaan",
+    image: Pathaan,
   },
   {
-    title: "Smile",
-    image: Smile,
-  },
-  {
-    title: "Violent Night",
-    image: Violent_Night,
-  },
+    title: "Oppenheimer",
+    image: Oppenheimer,
+  }
 ];
+
+
+
+
