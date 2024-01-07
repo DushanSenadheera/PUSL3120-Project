@@ -29,6 +29,7 @@ const Register = () => {
       <div className="bg">
         <div className="sign-in">
           <div className="sign-in-form">
+            <br />
             <h1>Register</h1>
             <form onSubmit={handleUserRegistration}>
               <div className="name">

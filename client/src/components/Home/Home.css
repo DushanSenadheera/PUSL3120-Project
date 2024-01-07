@@ -389,9 +389,9 @@ textarea{
         padding: 12px;
     }
 
-    /* .premiering-movies{
-        display: wrap;
-        flex-wrap: wrap;
-    } */
+    .premiering-movies{
+        display: flex;
+        flex-direction: column;
+    }
 
 }

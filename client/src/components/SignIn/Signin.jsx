@@ -28,6 +28,7 @@ const SignIn = () => {
       <div className="bg">
         <div className="sign-in">
           <div className="sign-in-form">
+            <br />
             <h1>Sign In</h1>
             <form onSubmit={handleUserLogin}>
               <input type="text" name="email" placeholder="Email" required />

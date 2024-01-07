@@ -24,16 +24,17 @@ function Profile() {
     <div className="bg">
         <div className="sign-in">
           <div className="sign-in-form">
+            <br />
             <h1>Your Profile</h1>
             <form>
               <div className="name">
-                <input type="text" name="fname" value="Ashan" placeholder="First Name" disabled />
-                <input type="text" name="lname" value="Herath" placeholder="Last Name" disabled />
+                <input type="text" name="fname" value="Jhon" placeholder="First Name" disabled />
+                <input type="text" name="lname" value="Doe" placeholder="Last Name" disabled />
               </div>
               <br />
-              <input type="email" name="email" value="ashandimanthalk@gmail.com" placeholder="Email" disabled />
+              <input type="email" name="email" value="jhon@gmail.com" placeholder="Email" disabled />
               <br />
-              <input type="tel" name="mobile" value="0713112927" placeholder="Mobile" disabled />
+              <input type="tel" name="mobile" value="0751231234" placeholder="Mobile" disabled />
             </form>
             <div className='btns'>
               <a href="/bookinghistory">
@@ -44,23 +45,11 @@ function Profile() {
                 <input type="submit" value="Edit Profile" className="del-acc-btn" />
               </a>
             </div>
-            <br />
-            <input type="email" name="email" value={profile.email} placeholder="Email" disabled />
-            <br />
-            <input type="tel" name="mobile" value={profile.mobile} placeholder="Mobile" disabled />
-          
-          <div className='btns'>
-            <a href="">
-              <input type="submit" value="Seat Booking History" className="sign-in-btn" />
-            </a>
-            <br />
-            <a href="">
-              <input type="submit" value="Profile Settings" className="del-acc-btn" />
-            </a>
+            
           </div>
         </div>
       </div>
-    </div>
+    
   )
 }
 

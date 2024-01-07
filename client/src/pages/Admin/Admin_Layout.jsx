@@ -13,7 +13,7 @@ function Admin_Layout() {
         <div className="Admin-img-n-name">
           <img src={Admin_img} alt="Admin" className="Admin-img" />
           <div className="admin-name">
-            <span>Amitha Gamagedara</span>
+            <span>Jhon Doe</span>
           </div>
         </div>
       </div>

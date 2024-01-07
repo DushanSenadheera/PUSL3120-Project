@@ -5,19 +5,20 @@ function Profile() {
     <div className="bg">
         <div className="sign-in">
           <div className="sign-in-form">
+            <br />
             <h1>Edit Profile</h1>
             <form>
               <div className="name">
-                <input type="text" name="fname" value="Ashan" placeholder="First Name" disabled />
-                <input type="text" name="lname" value="Herath" placeholder="Last Name" disabled />
+                <input type="text" name="fname" value="Jhon" placeholder="First Name" disabled />
+                <input type="text" name="lname" value="Doe" placeholder="Last Name" disabled />
               </div>
               <br />
-              <input type="email" name="email" value="ashandimanthalk@gmail.com" placeholder="Email" disabled />
+              <input type="email" name="email" value="jhon@gmail.com" placeholder="Email" disabled />
               <br />
               <input type="tel" name="mobile" value="0713112927" placeholder="Mobile" />
             </form>
             <div className='btns'>
-              <a href="">
+              <a href="/profile">
                 <input type="submit" value="Update Profile" className="sign-in-btn" />
               </a>
               <br />

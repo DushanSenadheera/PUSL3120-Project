@@ -34,7 +34,11 @@ const AdminSignIn = () => {
               <br />
               <input type="password" name="password" placeholder="Password" required />
               <br />
+              <a href="/admin">
+              <div>
               <input type="submit" value="Sign In" className="sign-in-btn" />
+              </div>
+              </a>
             </form>
           </div>
         </div>
