@@ -48,7 +48,7 @@ function Profile() {
             <input type="email" name="email" value={profile.email} placeholder="Email" disabled />
             <br />
             <input type="tel" name="mobile" value={profile.mobile} placeholder="Mobile" disabled />
-          </form>
+          
           <div className='btns'>
             <a href="">
               <input type="submit" value="Seat Booking History" className="sign-in-btn" />
