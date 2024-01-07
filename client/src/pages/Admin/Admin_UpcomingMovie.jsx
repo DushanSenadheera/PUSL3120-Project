@@ -7,7 +7,7 @@ import { PiPlusCircleFill } from "react-icons/pi";
 function Admin_Upcoming() {
   return (
     <>
-      <Link className="Bottom-Right-Add-Button">
+      <Link to="/add_upcoming_movie" className="Bottom-Right-Add-Button">
         <PiPlusCircleFill size={60} />
       </Link>
       <div className="Upcoming-Menu-List">

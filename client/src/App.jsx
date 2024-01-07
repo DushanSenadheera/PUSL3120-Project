@@ -13,6 +13,8 @@ import Admin_Logout from "./pages/Admin/Admin_Logout";
 import Payment from "./pages/Payment";
 import { Seatbooking } from "./pages/Seatbooking/Seatbooking";
 import Description from './pages/Description'
+import Premiere_Movie_Add from "./components/Admin-Premiere-Movie-Add/Premiere_Movie_Add";
+import Upcoming_Movie_Add from "./components/Admin-Upcoming-Movie-Add/Upcoming_Movie_Add";
 
 function App() {
   return (
@@ -37,6 +39,8 @@ function App() {
               <Route path="/premiere" element={<Admin_Premiere />} />
               <Route path="/upcoming" element={<Admin_Upcoming />} />
               <Route path="/logout" element={<Admin_Logout />} />
+              <Route path="/add_premiere_movie" element={<Premiere_Movie_Add/>} />
+              <Route path="/add_upcoming_movie" element={<Upcoming_Movie_Add/>} />
             </Route>
           </Routes>
         </main>
