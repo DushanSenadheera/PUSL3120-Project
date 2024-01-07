@@ -51,21 +51,19 @@ export const Seatbooking = () => {
     <div className="content">
       <div className="movie-details">
         <div className="movie">
-          <img src="../src/assets/Batman.jpg" alt="" />
+          <img src="../src/assets/movies/premiering/wonka.jpg" alt="" />
           <section className="test">
-            <h2>Batman</h2>
-            <h6>By unknown</h6>
+            <h2>Wonka</h2>
+            <h6>Paul King</h6>
             <br />
             <p className="catergories">
-              <span>Action</span>
-              <span>Adventure</span>
-              <span>Sci-Fi</span>
+              <span>Kids</span>
+              <span>Animation</span>
+              {/* <span>Sci-Fi</span> */}
             </p>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-              asperiores repellendus, eius unde non vero corrupti dolore ut!
-              Porro, itaque?
+            The story of how a young candy maker named Willy Wonka met an Oompa-Loompa while on a trip to England and how the two of them went on to create the greatest and most famous candy factory of all time.
             </p>
           </section>
         </div>
