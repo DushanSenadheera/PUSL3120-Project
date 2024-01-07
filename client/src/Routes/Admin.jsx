@@ -8,6 +8,7 @@ import Admin_Logout from "../pages/Admin/Admin_Logout";
 import Premiere_Movie_Add from "/src/components/Admin-Premiere-Movie-Add/Premiere_Movie_Add";
 import Upcoming_Movie_Add from "/src/components/Admin-Upcoming-Movie-Add/Upcoming_Movie_Add";
 import Admin_Edit_Premiere from "/src/pages/Admin/Admin_Edit_PremiereMovies";
+import Admin_Edit_Upcoming from "/src/pages/Admin/Admin_Edit_UpcomingMovies";
 
 function Admin() {
   return (
@@ -22,6 +23,7 @@ function Admin() {
               <Route path="/add_premiere_movie" element={<Premiere_Movie_Add/>} />
               <Route path="/add_upcoming_movie" element={<Upcoming_Movie_Add/>} />
               <Route path="/edit_premiere" element={<Admin_Edit_Premiere/>} />
+              <Route path="/edit_upcoming" element={<Admin_Edit_Upcoming/>} />
               
           
 

@@ -2,7 +2,7 @@
     {
         "id": "1",
         "user": "Ashan",
-        "movie": "Transformers",
+        "movie": "Wonka",
         "date": "2024-01-07, 10:00 AM",
         "category": "ODC",
         "seats": "A1,A2,A3,A4"
@@ -17,30 +17,6 @@
     },
     {
         "id": "3",
-        "user": "Amith",
-        "movie": "Black Adam",
-        "date": "2023-12-27, 11:00 AM",
-        "category": "BOX",
-        "seats": "C1, D1"
-    },
-    {
-        "id": "4",
-        "user": "Amith",
-        "movie": "Black Adam",
-        "date": "2023-12-27, 11:00 AM",
-        "category": "BOX",
-        "seats": "C1, D1"
-    },
-    {
-        "id": "5",
-        "user": "Amith",
-        "movie": "Black Adam",
-        "date": "2023-12-27, 11:00 AM",
-        "category": "BOX",
-        "seats": "C1, D1"
-    },
-    {
-        "id": "6",
         "user": "Amith",
         "movie": "Black Adam",
         "date": "2023-12-27, 11:00 AM",

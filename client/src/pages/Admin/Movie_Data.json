@@ -1,13 +1,13 @@
 [
    {
     "id": "1",
-    "title": "Avatar",
+    "title": "Wonka",
     "category": "ActionAdventure",
-    "cast":"Sam Worthington, Zoe Saldana, Sigourney Weaver",
-    "moviedetails":"Jake Sully (Sam Worthington), a paralyzed former Marine, becomes mobile again through one such Avatar and falls in love with a Na'vi woman (Zoe Saldana). As a bond with her grows, he is drawn into a battle for the survival of her world. Content collapsed.",
-    "image":"../assets/Avatar.jpg", 
+    "cast":"Timothée Chalamet, Keegan-Michael Key, Paterson Joseph, Matt Lucas, Mathew Baynton",
+    "moviedetails":"The analysis shows that Willy Wonka is innovative, flamboyant, stubborn, arrogant, and authoritarian. He loves to be the center of attention by putting on outrageous attire. He cannot stand questions and considers them as criticisms or threat. He always brags the products he creates to his guests.",
+    "image":"../assets/movies/premiering/wonka.jpg", 
     "link":"link",
-    "odc": "5000",
-    "box": "2000"
-   } 
+    "odc":"5000",
+    "box":"2000"
+}
 ]
