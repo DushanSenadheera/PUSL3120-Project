@@ -23,7 +23,7 @@ function Admin_Layout() {
           <ul>
             <li>
               <NavLink
-                to="/"
+                to="/admin"
                 style={({ isActive }) => {
                   return { background: isActive ? "#D80000" : "" };
                 }}
