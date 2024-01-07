@@ -20,7 +20,7 @@ function MenuItem({ title, image }) {
             <p>Yesterday</p>
           </div>
           <div className="Edit-Delete-Right">
-            <Link>
+            <Link to ="/edit_premiere">
               <FaEdit />
             </Link>
             <Link>

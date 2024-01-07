@@ -17,9 +17,11 @@ import Profile from './pages/Profile/Profile';
 import Profile_Edit from './pages/Profile/Profile-Edit';
 import ChangePassword from './pages/Profile/ChangePassword';
 import BookingHistory from './pages/Profile/BookingHistory';
+import Admin_Edit_Premiere from "./pages/Admin/Admin_Edit_PremiereMovies";
 import Users from "./Routes/Users";
 import Admin from "./Routes/Admin";
 import { BrowserRouter as Router } from 'react-router-dom';
+
 
 
 function App() {
@@ -29,6 +31,12 @@ function App() {
   };
   return (
     <div>
+
+      <BrowserRouter>
+        <main>
+          {/* <Nav />
+          <Routes>
+
        
      {!shouldHideNavAndFooter() && <Nav />}
     
@@ -41,6 +49,7 @@ function App() {
           {!shouldHideNavAndFooter() && <Footer />}
 
           {/* <Routes>
+
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/signin" element={<SignIn />} />
@@ -52,20 +61,36 @@ function App() {
             <Route path="/profile-edit" element={<Profile_Edit/>} />
             <Route path="/changepassword" element={<ChangePassword/>} />
             <Route path="/bookinghistory" element={<BookingHistory/>} />
+
+          </Routes>  */}
+
+
           </Routes> 
           
+
           <Routes>
             <Route path="/" element={<Admin_Layout />}>
               <Route path="/admin" element={<Admin_Dashboard />} />
               <Route path="/premiere" element={<Admin_Premiere />} />
               <Route path="/upcoming" element={<Admin_Upcoming />} />
               <Route path="/logout" element={<Admin_Logout />} />
+
+              <Route path="/add_premiere_movie" element={<Premiere_Movie_Add/>} />
+              <Route path="/add_upcoming_movie" element={<Upcoming_Movie_Add/>} />
+              <Route path="/edit_premiere" element={<Admin_Edit_Premiere/>} />
+            </Route>
+          </Routes>
+        </main>
+      </BrowserRouter>
+      {/* <Footer />  */}
+
             </Route>
           </Routes>
         </main>
       </BrowserRouter> */}
       
       
+
     </div>
   );
 }
