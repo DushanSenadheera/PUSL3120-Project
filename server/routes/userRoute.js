@@ -3,6 +3,7 @@ const router = express.Router();
 const User = require('../models/userSchema');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
+const auth = require('../services/auth')
 
 router.post('/profile', (req, res) => {
 
@@ -103,5 +104,25 @@ router.delete('/delete', (req, res) => {
     console.log(err);
   });
 });
+
+
+router.get('/currentuser', auth, (req, res) => {
+  // Extracting the email from the JWT token after authentication
+  const userEmail = req.user.email;
+
+  // Find the user in the database and return the user details
+  User.findOne({ email: userEmail }).then((user) => {
+    if (user) {
+      const { fName, lName, email, password, mobile } = user;
+      res.json({ fName, lName, email, password, mobile });
+    } else {
+      res.status(404).send('User not found');
+    }
+  }).catch((err) => {
+    console.log(err);
+    res.status(500).send(err.message);
+  });
+});
+
 
 module.exports = router;

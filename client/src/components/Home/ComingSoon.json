@@ -1,28 +1,28 @@
 [
     {
-        "title": "JW 4",
-        "subtitle": "Keanu Reeves",
-        "url": "../src/assets/jw.jpg"
+        "title": "Hanuman 2024",
+        "subtitle": "Teja Sajja",
+        "url": "../src/assets/movies/upcoming/hanuman.jpg"
     },
     {
-        "title": "Transformers",
-        "subtitle": "Shia LaBeouf",
-        "url": "../src/assets/transformers.jpg"
+        "title": "Sihinayaki Adare",
+        "subtitle": "Hemal Ranasinghe",
+        "url": "../src/assets/movies/upcoming/sihinayaki-adare.jpeg"
     },
     {
-        "title": "Smile",
-        "subtitle": "Brad Pitt",
-        "url": "../src/assets/smile.jpg"
+        "title": "Pushpa 2",
+        "subtitle": "Allu Arjun",
+        "url": "../src/assets/movies/upcoming/pushpa2.jpg"
     },
     {
-        "title": "Top Gun Maverick",
-        "subtitle": "Tom Cruise",
-        "url": "../src/assets/tg.jpg"
+        "title": "Kungfu Panda 4",
+        "subtitle": "Jack Black",
+        "url": "../src/assets/movies/upcoming/kungfu-panda-4.jpg"
     },
     {
-        "title": "Thor",
-        "subtitle": "Chris Hemsworth",
-        "url": "../src/assets/thor.jpg"
+        "title": "Deadpool 3",
+        "subtitle": "Ryan Reynolds",
+        "url": "../src/assets/movies/upcoming/deadpool.jpg"
     }
 
 

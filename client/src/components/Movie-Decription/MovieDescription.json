@@ -1,12 +1,12 @@
 [
     {
         "key": "1",
-        "image": "../src/assets/baposter.png",
-        "title": "Black Adam",
-        "director": "Jaume Collet-Serra",
-        "duration": "2h 30m",
-        "cast": "Dwayne Johnson, Noah Centineo, Aldis Hodge, Sarah Shahi, Quintessa Swindell, Pierce Brosnan",
-        "description": "Black Adam is an upcoming American superhero film based on the DC Comics character of the same name. Produced by New Line Cinema, DC Films, Seven Bucks Productions, and FlynnPictureCo., and distributed by Warner Bros. Pictures, it is intended to be the eleventh installment in the DC Extended Universe (DCEU). The film is directed by Jaume Collet-Serra from a screenplay by Adam Sztykiel, and stars Dwayne Johnson as Teth-Adam / Black Adam alongside Noah Centineo, Aldis Hodge, Sarah Shahi, Quintessa Swindell, and Pierce Brosnan. In the film, Black Adam is recruited by the Justice Society of America to help defeat the villainous society of superpowered individuals known as the Intergang."
+        "image": "../src/assets/movies/premiering/wonka-bg.jpeg",
+        "title": "Wonka",
+        "director": "Paul King",
+        "duration": "1h 30m",
+        "cast": "Timothée Chalamet, Keegan-Michael Key, Michaela Coel, Sally Hawkins, Olivia Colman, Rowan Atkinson, Seth Rogen, Richard Ayoade, Colin Firth, Tom Holland, Jim Carter, Simon Farnaby, Ralf Little, Adeel Akhtar, Angus Imrie",
+        "description": "The story of how a young candy maker named Willy Wonka met an Oompa-Loompa while on a trip to England and how the two of them went on to create the greatest and most famous candy factory of all time. With dreams of opening a shop in a city renowned for its chocolate, a young and poor Willy Wonka discovers that the industry is run by a cartel of greedy chocolatiers."
     }
 
 ]

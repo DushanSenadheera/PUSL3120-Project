@@ -28,7 +28,7 @@ const AdminSignIn = () => {
       <div className="bg">
         <div className="sign-in">
           <div className="sign-in-form">
-            <h1>Sign In</h1>
+            <h1>Admin Login</h1>
             <form onSubmit={handleUserLogin}>
               <input type="text" name="email" placeholder="Email" required />
               <br />

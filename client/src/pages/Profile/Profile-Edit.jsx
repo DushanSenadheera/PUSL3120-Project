@@ -21,7 +21,7 @@ function Profile() {
                 <input type="submit" value="Update Profile" className="sign-in-btn" />
               </a>
               <br />
-              <a href="">
+              <a href="/changepassword">
                 <input type="submit" value="Change Password" className="del-acc-btn" />
               </a>
               <br />
@@ -31,10 +31,11 @@ function Profile() {
             </div>
           </div>
         </div>
-  )
+  
         
     </div>
   )
+  
 }
 
 export default Profile

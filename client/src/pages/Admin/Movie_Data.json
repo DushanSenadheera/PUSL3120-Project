@@ -1,0 +1,13 @@
+[
+   {
+    "id": "1",
+    "title": "Avatar",
+    "category": "ActionAdventure",
+    "cast":"Sam Worthington, Zoe Saldana, Sigourney Weaver",
+    "moviedetails":"Jake Sully (Sam Worthington), a paralyzed former Marine, becomes mobile again through one such Avatar and falls in love with a Na'vi woman (Zoe Saldana). As a bond with her grows, he is drawn into a battle for the survival of her world. Content collapsed.",
+    "image":"../assets/Avatar.jpg", 
+    "link":"link",
+    "odc": "5000",
+    "box": "2000"
+   } 
+]

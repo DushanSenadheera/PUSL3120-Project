@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const Booking = require('../models/bookingSchema');
+const nodemailer = require('nodemailer');
+
 
 router.get('/booking', (req, res) => {
     Booking.find({}).then((data) => {
@@ -10,7 +12,19 @@ router.get('/booking', (req, res) => {
     });
 });
 
+var transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: 'recruitnsbm@gmail.com',
+      pass: 'sllkozacqwzyfxwb'
+    }
+  });
+  
+
 router.post('/booking/add', (req, res) => {
+       
+    const {email , movie ,date , time , seats ,total} = req.body;
+
     const booking = new Booking({
         email: req.body.email,
         movie: req.body.movie,
@@ -22,6 +36,22 @@ router.post('/booking/add', (req, res) => {
 
     booking.save().then(() => {
         console.log('booking added');
+        const mailData = `${email} have booked ${seats} seats on ${movie}. Total Amount is ${total}. Thank You!!`;    
+        
+    var mailOptions = {
+        from: 'abccinemaadmn@gmail.com',
+        to: email,
+        subject: ' Booking Confirm Mail',
+        text: mailData
+      };transporter.sendMail(mailOptions, function(error, info){
+        if (error) {
+          console.log(error);
+        } else {
+          console.log('Email sent: ' + info.response);
+        }
+      });
+
+
     }).catch((err) => {
         console.log(err);
     });

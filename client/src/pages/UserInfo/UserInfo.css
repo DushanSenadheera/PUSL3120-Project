@@ -1,0 +1,54 @@
+.user-info {
+    width: 80%;
+    max-width: 500px; /* Ensures it doesn't get too wide on larger screens */
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .user-info h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 24px;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 10px;
+    display: inline-block;
+  }
+  
+  .user-info div {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .user-info div strong {
+    color: #2980b9;
+    margin-right: 10px;
+    display: inline-block;
+    min-width: 80px;
+  }
+  
+  /* Adding a simple hover effect for interactivity */
+  .user-info:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+
+.delete-btn {
+    padding: 10px 20px;
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .delete-btn:hover {
+    background-color: #e74c3c;
+  }
+    

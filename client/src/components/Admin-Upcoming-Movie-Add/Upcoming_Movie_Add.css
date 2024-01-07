@@ -1,0 +1,90 @@
+.Add_Movie_Form {
+    width: 75vw;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+    padding: 2px;
+}
+
+input,
+select,
+textarea {
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.Form_lables_n_inputs_style {
+    margin-top: 10px;
+}
+
+.set-prices {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-group {
+    flex-direction: row;
+    margin-top: 20px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+button {
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 14px;
+    width: 180px;
+    font-size: 16px;
+}
+
+.Add_Movie_Submit_Button {
+    background-color: red;
+    position: relative;
+    color: #FFFFFF;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.Add_Movie_Cancel_Button {
+    background-color: #FFFFFF;
+    position: relative;
+    color: #161616;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 12px;
+}
+
+#movieCategory {
+    color: #FFFFFF;
+    width: 220px;
+}
