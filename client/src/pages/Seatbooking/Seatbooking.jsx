@@ -57,7 +57,7 @@ export const Seatbooking = () => {
             <h6>Paul King</h6>
             <br />
             <p className="catergories">
-              <span>Kids</span>
+              <span>Mus</span>
               <span>Animation</span>
               {/* <span>Sci-Fi</span> */}
             </p>
