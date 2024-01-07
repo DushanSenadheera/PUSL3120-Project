@@ -1,6 +1,7 @@
 .Page-Layout {
     display: flex;
     flex-direction: column;
+    height: 0px;
 }
 
 .Header-Section {
