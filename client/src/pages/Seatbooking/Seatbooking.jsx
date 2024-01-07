@@ -1,3 +1,4 @@
+import Paypal from "../../components/Payments/Paypal";
 import "./Seatbooking.css";
 import { row1, row2, row3, row4, row5 } from "./seat";
 import { useState, useEffect } from "react";
@@ -235,7 +236,10 @@ export const Seatbooking = () => {
               value="<%=rs.getString(6)%>"
               className="display-none"
             />
-            <input type="submit" value="Checkout" className="payhere-payment" />
+            {/* <input type="submit" value="Checkout" className="payhere-payment" /> */}
+            <dir className="paypal">
+            <Paypal />
+            </dir>
           </form>
         </div>
       </div>

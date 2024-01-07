@@ -25,8 +25,8 @@ const ContactUs = () => {
         </div>
         <div className="contact-form">
           <form className="contact-form-inputs" method="POST" action="emailSend">
-            <section>
-              <input type="text" placeholder="First Name" name="fname" />
+            <section >
+              <input type="text" placeholder="First Name" name="fname" className="input-name" />
               <input type="text" placeholder="Last Name" name="lname" />
             </section>
             <input type="email" placeholder="Email" name="email" />

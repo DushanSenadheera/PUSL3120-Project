@@ -1,3 +1,6 @@
+import Paypal from "../components/Payments/Paypal";
+
+
 export default function About() {
   return (
     <div>
@@ -14,6 +17,7 @@ export default function About() {
         <br />
         <br />
         <br />
+        <Paypal />
         <br />
         <br />
         <br />
