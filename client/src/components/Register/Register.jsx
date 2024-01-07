@@ -14,7 +14,7 @@ const Register = () => {
     axios.post('http://localhost:8000/sign', data)
       .then(res => {
         if (res.status === 200) {
-          window.location.href = '/login';
+          window.location.href = '/signIn';
         } else {
           alert('User registration failed');
         }
