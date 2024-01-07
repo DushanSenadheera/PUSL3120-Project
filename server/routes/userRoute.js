@@ -5,6 +5,19 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 const auth = require('../services/auth')
 
+router.post('/profile', (req, res) => {
+
+  const user = req.body.user;
+
+  User.find({
+    email: user
+  }).then((data) => {
+    res.send(data);
+  }).catch((err) => {
+    console.log(err);
+  });
+});
+
 router.post('/login', (req, res) => {
   const email = req.body.email;
   const password = req.body.password;

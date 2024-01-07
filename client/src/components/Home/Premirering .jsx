@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import './Home.css'; 
-import Premiering from "./Premiering.json"
 import axios from 'axios';
 
 function Premirering () {
