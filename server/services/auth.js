@@ -1,4 +1,4 @@
-export const auth = (req, res, next) => {
+const auth = (req, res, next) => {
     const token = req.headers.authorization?.split(" ")[1];
     if (token) {
       jwt.verify(token, process.env.JWT_KEY, (err, user) => {
@@ -12,4 +12,6 @@ export const auth = (req, res, next) => {
       res.status(401).send("Authorization token must be provided");
     }
   };
+
+module.exports = auth;
   
